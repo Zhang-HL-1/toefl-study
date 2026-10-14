@@ -26,4 +26,10 @@ npm run preview
 
 `vite.config.ts` sets `base: '/toefl-study/'`. The app uses `HashRouter`, so routes such as `/#/vocab` and `/#/room/library` work on Pages without a server rewrite.
 
-If the site is not published yet, open **Settings → Pages → Build and deployment → Source: GitHub Actions**, then re-run the **Deploy GitHub Pages** workflow.
+The build job already succeeds on `main`. Publishing needs one repository setting this token cannot change:
+
+1. Open https://github.com/Zhang-HL-1/toefl-study/settings/pages
+2. Under **Build and deployment**, set **Source** to **GitHub Actions**.
+3. Re-run **Deploy GitHub Pages** from the Actions tab.
+
+After that deploy, the site is at the URL above. Routes look like `https://zhang-hl-1.github.io/toefl-study/#/vocab`.
