@@ -9,6 +9,7 @@ import { useStore } from "../hooks/useStore"
 import { useTitle } from "../hooks/useTitle"
 import { wordsInRoom } from "../domain/words"
 import type { CardState } from "../domain/types"
+import { totalsFor } from "../domain/progressCounts"
 import { addLocalDays, formatInterval, startOfLocalDay } from "../domain/format"
 
 function statusOf(card: CardState | undefined, now: number): { label: string; tone: string } {
@@ -28,14 +29,15 @@ export function Room() {
   const [query, setQuery] = useState("")
   const [showGloss, setShowGloss] = useState(false)
   const [openId, setOpenId] = useState<string | null>(null)
+  const [onlyErrors, setOnlyErrors] = useState(false)
+  const [page, setPage] = useState(1)
   useTitle(room ? `${room.name} · Atrium` : "房间 · Atrium")
 
   const words = useMemo(() => (room ? wordsInRoom(room.id) : []), [room])
   const filtered = useMemo(() => {
     const needle = query.trim().toLowerCase()
-    if (!needle) return words
-    return words.filter((word) => `${word.lemma} ${word.gloss}`.toLowerCase().includes(needle))
-  }, [query, words])
+    return words.filter((word) => (!onlyErrors || totalsFor(data.cards[word.id]).errors > 0) && (!needle || `${word.lemma} ${word.gloss}`.toLowerCase().includes(needle)))
+  }, [query, words, onlyErrors, data])
 
   if (!room) {
     return <EmptyState title="没有这间屋子" body="房间编号不存在。" action={{ to: "/", label: "回庭院" }} />
@@ -62,10 +64,10 @@ export function Room() {
       </header>
       <div className="hero-actions">
         <Link className="btn btn-primary" to={`/vocab/${room.id}`}>
-          复习此室{queued > 0 ? ` · ${queued}` : ""}
+          随机练习此词库
         </Link>
         <p className="hero-note">
-          {mastered} / {words.length} 已掌握 · 间隔满 21 天
+          {words.length.toLocaleString()} 词 · {mastered} 已掌握 · {queued} 到期 / 新词
         </p>
       </div>
       <div className="toolbar">
@@ -76,7 +78,7 @@ export function Room() {
             name="room-filter"
             className="search"
             value={query}
-            onChange={(event) => setQuery(event.target.value)}
+            onChange={(event) => { setQuery(event.target.value); setPage(1) }}
             placeholder="筛选词或释义"
             spellCheck={false}
             autoComplete="off"
@@ -95,7 +97,7 @@ export function Room() {
         <p className="fine">没有符合的词。</p>
       ) : (
         <ul className="word-list">
-          {filtered.map((word) => {
+          {filtered.slice(0, page * 100).map((word) => {
             const card = data.cards[word.id]
             const status = statusOf(card, now)
             const open = showGloss || openId === word.id
@@ -110,6 +112,7 @@ export function Room() {
                     <span className="word-lemma">{word.lemma}</span>
                     <span className="word-pos">{word.pos}</span>
                     <span className={`pill ${status.tone}`}>{status.label}</span>
+                    <span className="word-counts">练习 {totalsFor(card).reviews} · 错误 {totalsFor(card).errors}</span>
                   </span>
                   {open ? (
                     <span className="word-detail">
@@ -123,6 +126,10 @@ export function Room() {
           })}
         </ul>
       )}
+      <div className="practice-modes">
+        <button type="button" className="btn btn-ghost" aria-pressed={onlyErrors} onClick={() => { setOnlyErrors((value) => !value); setPage(1) }}>{onlyErrors ? "显示全部" : "只看错词"}</button>
+        {filtered.length > page * 100 && <button className="btn btn-ghost" onClick={() => setPage((value) => value + 1)}>再显示 100 词（共 {filtered.length.toLocaleString()} 词）</button>}
+      </div>
     </div>
   )
 }

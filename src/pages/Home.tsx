@@ -19,26 +19,24 @@ export function Home() {
         <p className="eyebrow">Toefl vocabulary</p>
         <h1>今日庭院</h1>
         <p className="lede">
-          {greetingFor(new Date(now))}。{WORDS.length} 个托福词分在八间屋子里。评分按 SM-2
-          排下一次。进度留在这台浏览器，也可以同步到你自己的私密 Gist。
+          {greetingFor(new Date(now))}。{WORDS.length.toLocaleString()} 个单词与词组，涵盖 5 本 PDF 词库。
+          每轮随机、不重复，学完后自动开启下一轮。记录每个词的错误次数，连接后自动跨设备同步。
         </p>
         <div className="hero-actions">
           <Link className="btn btn-primary" to="/vocab">
-            开始复习
+            开始随机练习
             <ArrowRight size={16} aria-hidden />
           </Link>
           <p className="hero-note">
-            {summary.available === 0
-              ? "今天的份额已经完成"
-              : `${summary.due} 个到期 · ${summary.newRemaining} 个新词`}
+            不限每日新词数量 · 随时继续
           </p>
         </div>
       </section>
 
       <section className="metrics" aria-label="今日概览">
         <article className="metric">
-          <span className="metric-label">待复习</span>
-          <span className="metric-value">{summary.available}</span>
+          <span className="metric-label">词库总量</span>
+          <span className="metric-value">{WORDS.length.toLocaleString()}</span>
         </article>
         <article className="metric">
           <span className="metric-label">连续</span>
@@ -56,8 +54,8 @@ export function Home() {
 
       <section>
         <header className="section-head">
-          <h2>房间</h2>
-          <p>按主题进入，或从全部词里抽今日队列。</p>
+          <h2>词库与主题</h2>
+          <p>按 PDF 词库或主题进入，也可以随机练习全部词条。</p>
         </header>
         <ul className="room-grid">
           {summary.rooms.map((stat) => {
@@ -84,7 +82,7 @@ export function Home() {
         </ul>
       </section>
       <p className="fine">
-        未连接时，进度只在这台浏览器。换设备可到<Link to="/settings">同步</Link>，用你账号下的 secret gist。
+        首次在各设备的<Link to="/settings">同步</Link>页连接同一 GitHub 账号，之后自动同步学习进度与错误次数。
       </p>
     </div>
   )

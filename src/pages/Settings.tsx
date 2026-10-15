@@ -51,8 +51,8 @@ export function Settings() {
         <p className="eyebrow">Sync</p>
         <h1>同步</h1>
         <p className="lede">
-          复习时进度只写在这台浏览器。连接后，用你 GitHub 账号下的 secret gist 把进度合并到其他设备。不会写入公开的
-          toefl-study 仓库。
+          每台设备首次连接同一个 GitHub 账号后，练习记录、每词错误次数和轮次进度会自动同步。
+          关闭页面前请等待同步完成。
         </p>
       </header>
 
@@ -64,7 +64,8 @@ export function Settings() {
         {sync.connected ? (
           <div className="sync-meta">
             <p>
-              已保存令牌，只存在这台浏览器。Gist 文件 <code>{GIST_FILENAME}</code>
+              自动同步已开启：评分后约 1.5 秒同步；回到页面或恢复联网立即同步；页面打开期间每 30 秒检查更新。
+              Gist 文件 <code>{GIST_FILENAME}</code>
             </p>
             {sync.gistUrl ? (
               <p>
@@ -149,9 +150,9 @@ export function Settings() {
           账号下，不会出现在公开列表里；知道链接的人仍可打开，请不要把链接发到公开场合。
         </p>
         <p className="note">
-          合并时每张卡片保留写入更晚的一份（<code>updated</code>，否则上次复习时间，否则最近一条记录）。时间相同则留下重复次数、间隔、到期更靠后的一张。复习记录取并集，最多
-          2000 条。立即同步会先拉取再上传合并结果；拉取只把 Gist 合并进这台浏览器；复习后约 1.5
-          秒自动上传。断开会删掉这台浏览器里的令牌，不删除 Gist，也不清空本地进度。
+          每台设备分别保存记录，同步时合并所有设备，避免同时学习时互相覆盖。每词练习、错误、模糊次数长期累计；
+          详细评分历史保留最近 2000 条。断网时继续保存在本机，恢复联网后重试。
+          另一台设备也需首次连接同一 GitHub 账号，可留空 Gist ID 自动查找。
         </p>
       </section>
     </div>

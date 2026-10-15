@@ -2,6 +2,7 @@ import { GRADE_IDS } from "./grades"
 import type { GradeId } from "./grades"
 import { EVENT_LIMIT } from "./types"
 import type { CardState, ReviewEvent, StoreData } from "./types"
+import { countsFor, mergeCounts, totalsFor } from "./progressCounts"
 
 /**
  * Merge rule for two progress snapshots (this browser and the secret gist).
@@ -40,6 +41,12 @@ function isCard(value: unknown): value is CardState {
   if (card.updated !== undefined && !isFiniteNumber(card.updated)) return false
   if (card.lastReviewed !== undefined && !isFiniteNumber(card.lastReviewed)) return false
   if (card.lastGrade !== undefined && !isGrade(card.lastGrade)) return false
+  if (card.counts !== undefined) {
+    if (!card.counts || typeof card.counts !== "object" || Array.isArray(card.counts)) return false
+    for (const count of Object.values(card.counts)) {
+      if (!count || ![count.reviews, count.errors, count.fuzzy].every((n) => Number.isSafeInteger(n) && n >= 0)) return false
+    }
+  }
   return true
 }
 
@@ -60,6 +67,7 @@ function isFiniteNumber(value: unknown): value is number {
 }
 
 function eventKey(event: ReviewEvent): string {
+  if (event.id) return event.id
   return `${event.wordId}\0${event.at}\0${event.grade}`
 }
 
@@ -79,7 +87,10 @@ export function canonicalizeStore(data: StoreData): StoreData {
   const cards: Record<string, CardState> = {}
   for (const id of Object.keys(data.cards).sort()) {
     const card = data.cards[id]
-    if (card) cards[id] = card
+    if (card) {
+      cards[id] = { ...card, counts: mergeCounts(countsFor(card, data.events, id), {}) }
+      cards[id].lapses = totalsFor(cards[id]).errors
+    }
   }
   return { version: 1, cards, events: unionEvents(data.events, []) }
 }
@@ -129,7 +140,10 @@ export function mergeStores(local: StoreData, remote: StoreData): StoreData {
   for (const id of ids) {
     const left = local.cards[id]
     const right = remote.cards[id]
-    if (left && right) cards[id] = preferCard(id, left, right, local.events, remote.events)
+    if (left && right) cards[id] = {
+      ...preferCard(id, left, right, local.events, remote.events),
+      counts: mergeCounts(countsFor(left, local.events, id), countsFor(right, remote.events, id)),
+    }
     else if (left) cards[id] = left
     else if (right) cards[id] = right
   }

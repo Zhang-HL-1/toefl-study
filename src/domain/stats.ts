@@ -4,7 +4,8 @@ import { addLocalDays, dayKey, dayNumber, startOfLocalDay } from "./format"
 import { ROOMS, type Room } from "./rooms"
 import { buildQueue, newBudget } from "./schedule"
 import type { StoreData } from "./types"
-import { WORDS } from "./words"
+import { WORDS, wordsInRoom } from "./words"
+import { totalsFor } from "./progressCounts"
 
 const MASTER_INTERVAL = 21
 
@@ -96,9 +97,9 @@ export function summarize(data: StoreData, now: number): Summary {
     }
   }
 
-  const forgotten = byGrade.forgot
-  const totalReviews = data.events.length
-  const retention = totalReviews === 0 ? null : (totalReviews - forgotten) / totalReviews
+  const totalReviews = Object.values(data.cards).reduce((sum, card) => sum + totalsFor(card).reviews, 0)
+  const totalErrors = Object.values(data.cards).reduce((sum, card) => sum + totalsFor(card).errors, 0)
+  const retention = totalReviews === 0 ? null : (totalReviews - totalErrors) / totalReviews
 
   const todayKey = dayKey(now)
   let cursor = dayCounts.has(todayKey) ? start : addLocalDays(now, -1)
@@ -113,6 +114,15 @@ export function summarize(data: StoreData, now: number): Summary {
     const ts = addLocalDays(now, -offset)
     const key = dayKey(ts)
     days.push({ key, label: dayNumber(ts), count: dayCounts.get(key) ?? 0 })
+  }
+
+  for (const stat of rooms) {
+    const pool = wordsInRoom(stat.room.id)
+    stat.total = pool.length
+    stat.unseen = pool.filter((word) => !data.cards[word.id]).length
+    stat.mastered = pool.filter((word) => isMastered(data.cards[word.id]?.interval ?? 0)).length
+    stat.learning = stat.total - stat.unseen - stat.mastered
+    stat.due = pool.filter((word) => data.cards[word.id]?.due <= now).length
   }
 
   return {

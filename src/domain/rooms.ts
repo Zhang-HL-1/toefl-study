@@ -17,6 +17,10 @@ export interface Room {
 }
 
 export const ROOMS: readonly Room[] = [
+  ...sourceBooks.map((book): Room => ({
+    id: `book-${book.id}`, name: book.title, kicker: "PDF 词库",
+    blurb: `${book.entries.toLocaleString()} 条原始词条 · ${book.pages} 页，保留全部词义与词组。`, icon: "library",
+  })),
   {
     id: "threshold",
     name: "门槛",
@@ -78,3 +82,4 @@ export const ROOMS: readonly Room[] = [
 export function roomById(id: string): Room | undefined {
   return ROOMS.find((room) => room.id === id)
 }
+import sourceBooks from "../data/sources.json"

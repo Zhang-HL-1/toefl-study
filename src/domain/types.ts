@@ -1,6 +1,8 @@
 import type { GradeId } from "./grades"
+import type { Counts } from "./progressCounts"
 
 export interface CardState {
+  counts?: Counts
   ease: number
   interval: number
   repetitions: number
@@ -16,6 +18,7 @@ export interface CardState {
 export const EVENT_LIMIT = 2000
 
 export interface ReviewEvent {
+  id?: string
   wordId: string
   grade: GradeId
   at: number

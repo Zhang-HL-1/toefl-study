@@ -1,7 +1,5 @@
 import { BookOpen, ChartColumn, House, Settings } from "lucide-react"
 import { NavLink, Outlet } from "react-router-dom"
-import { summarize } from "../domain/stats"
-import { useStore } from "../hooks/useStore"
 
 function Mark() {
   return (
@@ -13,8 +11,6 @@ function Mark() {
 }
 
 export function Shell() {
-  const data = useStore()
-  const available = summarize(data, Date.now()).available
 
   return (
     <>
@@ -34,8 +30,7 @@ export function Shell() {
             </NavLink>
             <NavLink to="/vocab">
               <BookOpen size={16} strokeWidth={1.7} aria-hidden />
-              <span>复习</span>
-              {available > 0 ? <span className="badge">{available}</span> : null}
+              <span>练习</span>
             </NavLink>
             <NavLink to="/stats">
               <ChartColumn size={16} strokeWidth={1.7} aria-hidden />

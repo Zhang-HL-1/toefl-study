@@ -1,8 +1,19 @@
 import { startOfLocalDay } from "./format"
 import type { StoreData } from "./types"
-import { WORDS, type Word } from "./words"
+import { WORDS, wordsInRoom, type Word } from "./words"
+import { totalsFor } from "./progressCounts"
 
 export const NEW_PER_DAY = 12
+
+/** Synced cumulative counts resume an unfinished round on any device. */
+export function randomCandidate(pool: readonly Word[], data: StoreData, lastId?: string, random = Math.random): Word | undefined {
+  if (!pool.length) return undefined
+  const minimum = Math.min(...pool.map((word) => totalsFor(data.cards[word.id]).reviews))
+  const candidates = pool.filter((word) => totalsFor(data.cards[word.id]).reviews === minimum)
+  const withoutLast = candidates.filter((word) => word.id !== lastId)
+  const choices = withoutLast.length ? withoutLast : candidates
+  return choices[Math.floor(random() * choices.length)]
+}
 
 export interface QueueItem {
   word: Word
@@ -26,7 +37,7 @@ export function newBudget(data: StoreData, now: number): number {
 }
 
 export function buildQueue(data: StoreData, now: number, roomId?: string): QueueItem[] {
-  const pool = roomId ? WORDS.filter((word) => word.roomId === roomId) : WORDS
+  const pool = roomId ? wordsInRoom(roomId) : WORDS
   const due: QueueItem[] = []
   const fresh: Word[] = []
 

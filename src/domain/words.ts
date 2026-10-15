@@ -1,10 +1,16 @@
 import { ROOMS } from "./rooms"
+import pdfWords from "../data/pdfWords.json"
+import sourceBooks from "../data/sources.json"
+
+export const SOURCE_BOOKS = sourceBooks
+export interface WordSource { bookId: string; page: number; index: number }
 
 export interface Word {
   id: string
   lemma: string
   ipa: string
-  pos: "n." | "v." | "adj."
+  pos: string
+  sources?: WordSource[]
   gloss: string
   example: string
   roomId: string
@@ -29,7 +35,7 @@ function w(
   }
 }
 
-export const WORDS: readonly Word[] = [
+const ORIGINAL_WORDS: readonly Word[] = [
   w("threshold", "ubiquitous", "juːˈbɪkwɪtəs", "adj.", "无处不在的", "Smartphones have become ubiquitous on college campuses."),
   w("threshold", "ambiguous", "æmˈbɪɡjuəs", "adj.", "模棱两可的", "The ending is ambiguous, and readers still disagree."),
   w("threshold", "pragmatic", "præɡˈmætɪk", "adj.", "务实的", "A pragmatic plan may be less elegant but easier to fund."),
@@ -135,6 +141,23 @@ export const WORDS: readonly Word[] = [
   w("chamber", "inevitable", "ɪnˈevɪtəbl", "adj.", "不可避免的", "Some conflict was inevitable once the budget was cut."),
 ]
 
+// Match existing lemmas first so all old progress IDs stay valid.
+const byLemma = new Map<string, Word>(ORIGINAL_WORDS.map((word) => [word.lemma.toLowerCase(), { ...word }]))
+for (const entry of pdfWords) {
+  const existing = byLemma.get(entry.lemma.toLowerCase())
+  byLemma.set(entry.lemma.toLowerCase(), {
+    id: existing?.id ?? entry.id,
+    lemma: existing?.lemma ?? entry.lemma,
+    ipa: existing?.ipa ?? "",
+    pos: existing?.pos ?? (entry.sources.some((source) => source.bookId.includes("phrases")) ? "词组" : ""),
+    gloss: entry.glosses.join("； "),
+    example: existing?.example ?? "",
+    roomId: existing?.roomId ?? `book-${entry.sources[0].bookId}`,
+    sources: entry.sources,
+  })
+}
+export const WORDS: readonly Word[] = [...byLemma.values()]
+
 const seen = new Set<string>()
 for (const word of WORDS) {
   if (seen.has(word.id)) throw new Error(`duplicate word id ${word.id}`)
@@ -145,5 +168,5 @@ for (const word of WORDS) {
 }
 
 export function wordsInRoom(roomId: string): Word[] {
-  return WORDS.filter((word) => word.roomId === roomId)
+  return WORDS.filter((word) => word.roomId === roomId || word.sources?.some((source) => `book-${source.bookId}` === roomId))
 }

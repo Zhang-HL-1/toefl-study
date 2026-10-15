@@ -727,3 +727,15 @@ a { color: inherit; }
 @media (prefers-reduced-motion: reduce) {
   .btn-primary:hover, .grade:hover { filter: none; }
 }
+
+/* Expanded vocabulary and practice controls */
+.practice-modes { display: flex; flex-wrap: wrap; gap: .6rem; margin: 1.5rem 0; }
+.word-counts { font-size: .78rem; color: var(--muted, #716c62); line-height: 1.7; }
+.word-line { flex-wrap: wrap; }
+.lemma { overflow-wrap: anywhere; }
+.gloss { white-space: pre-line; }
+.mistake-row { padding: 1.2rem 0; border-bottom: 1px solid var(--line, #ddd7cc); }
+.mistake-row strong { display: inline-block; margin-right: 1rem; }
+.mistake-row p { font-size: .9rem; color: var(--muted, #716c62); margin: .5rem 0 0; }
+.study-top { flex-wrap: wrap; gap: .5rem; }
+@media(max-width: 600px) { .practice-modes .btn { flex: 1; padding-inline: .6rem; } .room-name { overflow-wrap: anywhere; } }

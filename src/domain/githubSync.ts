@@ -1,6 +1,7 @@
 import { mergeStores, parseStoreJson, serializeStore } from "./mergeProgress"
 import { getSnapshot, replaceStore, subscribe } from "./store"
 import type { StoreData } from "./types"
+import { deviceId } from "./progressCounts"
 
 /**
  * Progress sync against a secret GitHub Gist owned by the signed-in token.
@@ -21,7 +22,7 @@ export const GIST_FILENAME = "atrium-toefl-progress.json"
 
 const GIST_DESCRIPTION = "Atrium TOEFL progress"
 const API_ROOT = "https://api.github.com"
-const API_VERSION = "2026-03-10"
+const API_VERSION = "2022-11-28"
 const PUSH_DELAY_MS = 1500
 const FORCE_PUSH_KEY = "atrium.sync.forcePush"
 const TOKEN_URL = "https://github.com/settings/tokens/new?scopes=gist&description=Atrium%20TOEFL"
@@ -231,6 +232,7 @@ async function gh(token: string, path: string, init?: RequestInit): Promise<Resp
   try {
     response = await fetch(url, {
       ...init,
+      signal: AbortSignal.timeout(20_000),
       cache: "no-store",
       headers: {
         Accept: "application/vnd.github+json",
@@ -284,7 +286,7 @@ async function fileText(file: GistFile): Promise<string> {
   }
   let response: Response
   try {
-    response = await fetch(file.raw_url, { cache: "no-store" })
+    response = await fetch(file.raw_url, { cache: "no-store", signal: AbortSignal.timeout(20_000) })
   } catch {
     throw new GithubSyncError("无法读取 Gist 原文。")
   }
@@ -293,10 +295,15 @@ async function fileText(file: GistFile): Promise<string> {
 }
 
 async function readStoreFromGist(gist: GistPayload): Promise<StoreData> {
-  const file = findFile(gist)
-  if (!file) return { version: 1, cards: {}, events: [] }
+  const files = Object.entries(gist.files ?? {}).filter(([name]) =>
+    name === GIST_FILENAME || /^atrium-device-[a-zA-Z0-9-]+\.json$/.test(name),
+  )
   try {
-    return parseStoreJson(await fileText(file))
+    let merged: StoreData = { version: 1, cards: {}, events: [] }
+    for (const [, file] of files) {
+      if (file) merged = mergeStores(merged, parseStoreJson(await fileText(file)))
+    }
+    return merged
   } catch (error) {
     if (error instanceof GithubSyncError) throw error
     throw new GithubSyncError(error instanceof Error ? error.message : "Gist 内容无法读取。")
@@ -361,7 +368,8 @@ async function patchGist(token: string, gistId: string, content: string) {
   await ghJson(token, `/gists/${encodeURIComponent(gistId)}`, {
     method: "PATCH",
     body: JSON.stringify({
-      files: { [GIST_FILENAME]: { content } },
+      // Separate files preserve simultaneous writes from different devices.
+      files: { [`atrium-device-${deviceId()}.json`]: { content } },
     }),
   })
 }
@@ -464,7 +472,7 @@ function schedulePush() {
   window.clearTimeout(pushTimer)
   pushTimer = window.setTimeout(() => {
     pushTimer = 0
-    void runExclusive(() => pushCurrent())
+    void runExclusive(() => reconcile())
   }, PUSH_DELAY_MS)
 }
 
@@ -536,6 +544,15 @@ export function installGithubSync() {
     if (event.key !== GITHUB_SYNC_STORAGE_KEY) return
     emit()
   })
+  const autoSync = () => {
+    if (hasConnection() && memory.phase !== "syncing" && navigator.onLine && document.visibilityState === "visible") {
+      void syncGithubNow()
+    }
+  }
+  window.addEventListener("focus", autoSync)
+  window.addEventListener("online", autoSync)
+  document.addEventListener("visibilitychange", autoSync)
+  window.setInterval(autoSync, 30_000)
   if (!hasConnection()) return
   if (localWins()) void pushGithubNow()
   else void syncGithubNow()

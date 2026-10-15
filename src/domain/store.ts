@@ -1,5 +1,6 @@
 import { gradeById, type GradeId } from "./grades"
-import { canonicalizeStore, serializeStore } from "./mergeProgress"
+import { canonicalizeStore, serializeStore, mergeStores } from "./mergeProgress"
+import { countsFor, writerId, totalsFor } from "./progressCounts"
 import { freshCard, scheduleCard } from "./sm2"
 import { EVENT_LIMIT, type StoreData } from "./types"
 
@@ -52,9 +53,18 @@ export function reviewWord(wordId: string, gradeId: GradeId, now = Date.now()) {
   const grade = gradeById(gradeId)
   const previous = snapshot.cards[wordId] ?? freshCard()
   const nextCard = scheduleCard(previous, grade.q, now, gradeId)
+  const counts = countsFor(previous, snapshot.events, wordId)
+  const device = writerId()
+  const current = counts[device] ?? { reviews: 0, errors: 0, fuzzy: 0 }
+  nextCard.counts = { ...counts, [device]: {
+    reviews: current.reviews + 1,
+    errors: current.errors + (gradeId === "forgot" ? 1 : 0),
+    fuzzy: current.fuzzy + (gradeId === "fuzzy" ? 1 : 0),
+  } }
+  nextCard.lapses = totalsFor(nextCard).errors
   const events = [
     ...snapshot.events,
-    { wordId, grade: gradeId, at: now, interval: nextCard.interval },
+    { id: crypto.randomUUID(), wordId, grade: gradeId, at: now, interval: nextCard.interval },
   ].slice(-EVENT_LIMIT)
   commit({
     version: 1,
@@ -82,7 +92,13 @@ export function resetProgress() {
 if (typeof window !== "undefined") {
   window.addEventListener("storage", (event) => {
     if (event.key !== KEY) return
-    snapshot = loadStore()
-    listeners.forEach((listener) => listener())
+    const disk = loadStore()
+    const merged = mergeStores(snapshot, disk)
+    if (serializeStore(merged) === serializeStore(snapshot)) return
+    if (serializeStore(merged) !== serializeStore(disk)) commit(merged)
+    else {
+      snapshot = merged
+      listeners.forEach((listener) => listener())
+    }
   })
 }
