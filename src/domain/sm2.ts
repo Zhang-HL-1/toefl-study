@@ -40,6 +40,7 @@ export function scheduleCard(card: CardState, q: number, now: number, grade?: Gr
     due: q < 3 ? now : addLocalDays(now, interval),
     lastGrade: grade ?? card.lastGrade,
     lastReviewed: now,
+    updated: now,
   }
 }
 
