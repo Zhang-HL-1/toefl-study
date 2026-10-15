@@ -8,7 +8,12 @@ export interface CardState {
   lapses: number
   lastGrade?: GradeId
   lastReviewed?: number
+  /** Milliseconds of the review that wrote this card. Merge treats it as the write clock. */
+  updated?: number
 }
+
+/** Review history kept on device and in the gist. Shared by the local store and sync merge. */
+export const EVENT_LIMIT = 2000
 
 export interface ReviewEvent {
   wordId: string

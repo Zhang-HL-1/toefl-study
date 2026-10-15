@@ -1,4 +1,4 @@
-import { BookOpen, ChartColumn, House } from "lucide-react"
+import { BookOpen, ChartColumn, House, Settings } from "lucide-react"
 import { NavLink, Outlet } from "react-router-dom"
 import { summarize } from "../domain/stats"
 import { useStore } from "../hooks/useStore"
@@ -40,6 +40,9 @@ export function Shell() {
             <NavLink to="/stats">
               <ChartColumn size={16} strokeWidth={1.7} aria-hidden />
               <span>统计</span>
+            </NavLink>
+            <NavLink to="/settings" className="nav-icon" aria-label="同步" title="同步">
+              <Settings size={16} strokeWidth={1.7} aria-hidden />
             </NavLink>
           </nav>
         </div>

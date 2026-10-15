@@ -2,8 +2,10 @@ import { useState } from "react"
 import { RoomGlyph } from "../components/RoomGlyph"
 import { formatPercent } from "../domain/format"
 import { GRADES } from "../domain/grades"
+import { getGithubSyncSnapshot, preferLocalPush, pushGithubNow } from "../domain/githubSync"
 import { resetProgress } from "../domain/store"
 import { summarize } from "../domain/stats"
+import { useGithubSync } from "../hooks/useGithubSync"
 import { useStore } from "../hooks/useStore"
 import { useTitle } from "../hooks/useTitle"
 
@@ -11,6 +13,7 @@ export function Stats() {
   const data = useStore()
   const summary = summarize(data, Date.now())
   const [armed, setArmed] = useState(false)
+  const sync = useGithubSync()
   useTitle("统计 · Atrium")
   const peak = Math.max(1, ...summary.days.map((day) => day.count))
   const gradePeak = Math.max(1, ...GRADES.map((grade) => summary.byGrade[grade.id]))
@@ -116,7 +119,12 @@ export function Stats() {
 
       <section className="reset">
         <h2>本机记录</h2>
-        <p>清空后无法恢复。词表还在，进度从零开始。</p>
+        <p>
+          清空后，这台浏览器里的进度无法恢复。词表还在。
+          {sync.connected
+            ? "已连接时，空进度会上传到私密 Gist。其他设备上还留着的卡片，会在那些设备同步时按合并规则加回来。"
+            : "未连接时只清本机。之后若再连接，Gist 里已有的进度会合并回来。"}
+        </p>
         {armed ? <p className="reset-warn">再按一次以确认。刷新页面会取消。</p> : null}
         <button
           type="button"
@@ -126,7 +134,9 @@ export function Stats() {
               setArmed(true)
               return
             }
+            if (getGithubSyncSnapshot().connected) preferLocalPush()
             resetProgress()
+            if (getGithubSyncSnapshot().connected) void pushGithubNow()
             setArmed(false)
           }}
         >

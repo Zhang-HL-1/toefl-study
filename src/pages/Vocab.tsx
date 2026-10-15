@@ -8,6 +8,7 @@ import { roomById } from "../domain/rooms"
 import { NEW_PER_DAY, buildQueue, type QueueItem } from "../domain/schedule"
 import { freshCard, scheduleCard } from "../domain/sm2"
 import { getSnapshot, reviewWord } from "../domain/store"
+import { useGithubSync } from "../hooks/useGithubSync"
 import { useStore } from "../hooks/useStore"
 import { useTitle } from "../hooks/useTitle"
 
@@ -25,6 +26,7 @@ export function Vocab() {
 
 function Session({ roomId, roomName }: { roomId?: string; roomName?: string }) {
   const data = useStore()
+  const sync = useGithubSync()
   const [queue, setQueue] = useState<QueueItem[]>(() => buildQueue(getSnapshot(), Date.now(), roomId))
   const [revealed, setRevealed] = useState(false)
   const [reviewed, setReviewed] = useState(0)
@@ -81,7 +83,9 @@ function Session({ roomId, roomName }: { roomId?: string; roomName?: string }) {
             ? roomName
               ? `「${roomName}」没有到期的卡片，今天的 ${NEW_PER_DAY} 个新词额度也用完了。`
               : `到期的卡片已经清完，今天的 ${NEW_PER_DAY} 个新词也用完了。`
-            : "评分已写入这台浏览器。明天到期的词会回到队列。"
+            : sync.connected
+              ? "评分已写入这台浏览器，并会上传到私密 Gist。明天到期的词会回到队列。"
+              : "评分已写入这台浏览器。明天到期的词会回到队列。"
         }
         action={
           initial === 0

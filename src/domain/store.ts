@@ -1,6 +1,7 @@
 import { gradeById, type GradeId } from "./grades"
+import { canonicalizeStore, serializeStore } from "./mergeProgress"
 import { freshCard, scheduleCard } from "./sm2"
-import type { StoreData } from "./types"
+import { EVENT_LIMIT, type StoreData } from "./types"
 
 const KEY = "atrium.toefl.v1"
 
@@ -19,7 +20,7 @@ export function loadStore(): StoreData {
     const raw = localStorage.getItem(KEY)
     if (!raw) return emptyStore()
     const parsed: unknown = JSON.parse(raw)
-    return isStore(parsed) ? parsed : emptyStore()
+    return isStore(parsed) ? canonicalizeStore(parsed) : emptyStore()
   } catch {
     return emptyStore()
   }
@@ -54,12 +55,19 @@ export function reviewWord(wordId: string, gradeId: GradeId, now = Date.now()) {
   const events = [
     ...snapshot.events,
     { wordId, grade: gradeId, at: now, interval: nextCard.interval },
-  ].slice(-2000)
+  ].slice(-EVENT_LIMIT)
   commit({
     version: 1,
     cards: { ...snapshot.cards, [wordId]: nextCard },
     events,
   })
+}
+
+/** Replace the in-memory store and local cache. No-op when the canonical JSON is unchanged. */
+export function replaceStore(next: StoreData) {
+  const canonical = canonicalizeStore(next)
+  if (serializeStore(canonical) === serializeStore(snapshot)) return
+  commit(canonical)
 }
 
 export function resetProgress() {

@@ -20,7 +20,7 @@ export function Home() {
         <h1>今日庭院</h1>
         <p className="lede">
           {greetingFor(new Date(now))}。{WORDS.length} 个托福词分在八间屋子里。评分按 SM-2
-          排下一次，进度只留在这台浏览器。
+          排下一次。进度留在这台浏览器，也可以同步到你自己的私密 Gist。
         </p>
         <div className="hero-actions">
           <Link className="btn btn-primary" to="/vocab">
@@ -83,7 +83,9 @@ export function Home() {
           })}
         </ul>
       </section>
-      <p className="fine">进度写在 localStorage。换浏览器，或清除站点数据，记录会消失。</p>
+      <p className="fine">
+        未连接时，进度只在这台浏览器。换设备可到<Link to="/settings">同步</Link>，用你账号下的 secret gist。
+      </p>
     </div>
   )
 }
