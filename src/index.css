@@ -730,6 +730,49 @@ a { color: inherit; }
 
 /* Expanded vocabulary and practice controls */
 .practice-modes { display: flex; flex-wrap: wrap; gap: .6rem; margin: 1.5rem 0; }
+
+/* Practice fills the viewport under the app bar: mode tabs sit just below it,
+   and the word card is centered in the space under the round progress. */
+.main:has(> .practice) {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 57px);
+  height: calc(100dvh - 57px);
+  padding-top: 12px;
+  padding-bottom: 20px;
+  overflow: auto;
+}
+
+.practice {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+  width: 100%;
+}
+
+.practice > .practice-modes {
+  flex: none;
+  margin: 0 0 14px;
+}
+
+.practice > .study {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: min(640px, 100%);
+  align-self: center;
+}
+
+.study-meta { flex: none; }
+
+.study-stage {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 8px;
+}
 .word-counts { font-size: .78rem; color: var(--muted, #716c62); line-height: 1.7; }
 .word-line { flex-wrap: wrap; }
 .lemma { overflow-wrap: anywhere; }
