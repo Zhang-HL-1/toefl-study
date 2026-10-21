@@ -772,6 +772,10 @@ a { color: inherit; }
   flex-direction: column;
   justify-content: center;
   padding-top: 8px;
+  /* Status and leave lines hang under the card, so centering the whole
+     block leaves the card about 50px below the viewport center. This
+     bottom padding lifts the card itself into that center. */
+  padding-bottom: 100px;
 }
 .word-counts { font-size: .78rem; color: var(--muted, #716c62); line-height: 1.7; }
 .word-line { flex-wrap: wrap; }
