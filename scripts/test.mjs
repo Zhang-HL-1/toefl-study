@@ -4,6 +4,23 @@ import { createServer } from "vite"
 const server = await createServer({ server: { middlewareMode: true } })
 try {
   const { WORDS, SOURCE_BOOKS, wordsInRoom } = await server.ssrLoadModule("/src/domain/words.ts")
+  const { PREFIXES, PREFIX_VOCAB } = await server.ssrLoadModule("/src/domain/prefixVocab.ts")
+  assert.deepEqual([...PREFIXES], ["trans", "pro", "pre", "in", "re", "st"])
+  assert.equal(PREFIX_VOCAB.length, 520)
+  assert.deepEqual(
+    Object.fromEntries(PREFIXES.map((prefix) => [prefix, PREFIX_VOCAB.filter((entry) => entry.prefix === prefix).length])),
+    { trans: 17, pro: 52, pre: 42, in: 156, re: 173, st: 80 },
+  )
+  assert.equal(new Set(PREFIX_VOCAB.map((entry) => entry.id)).size, PREFIX_VOCAB.length)
+  for (const entry of PREFIX_VOCAB) {
+    assert.equal(entry.id, `${entry.prefix}-${entry.number}`)
+    assert(entry.word.toLowerCase().startsWith(entry.prefix), entry.word)
+    assert(entry.meaning.length > 0)
+    assert(!/[\u2E80-\u2FDF]/.test(entry.meaning), entry.meaning)
+  }
+  assert.equal(PREFIX_VOCAB.find((entry) => entry.word === "transact").meaning, "vt. vi. 做业务，做交易")
+  assert.equal(PREFIX_VOCAB.find((entry) => entry.word === "resident").meaning, "n. 居民，住户；住院实习医生；adj. (在某地) 居住的")
+  assert.equal(PREFIX_VOCAB.find((entry) => entry.word === "proclaim").meaning, "vt. 宣布，声明；表明，显示")
   const { randomCandidate } = await server.ssrLoadModule("/src/domain/schedule.ts")
   const { mergeStores, parseStoreJson, serializeStore, selfCheckMerge } = await server.ssrLoadModule("/src/domain/mergeProgress.ts")
   const { totalsFor } = await server.ssrLoadModule("/src/domain/progressCounts.ts")
@@ -102,7 +119,7 @@ try {
   assert(patches.length > 0)
   assert(!JSON.stringify(gist.files).includes("test-token"))
   globalThis.fetch = originalFetch
-  console.log(`PASS: ${WORDS.length} words; all 11,767 PDF references; random rounds/reload; legacy migration; concurrent-device counters; offline/reconnect sync.`)
+  console.log(`PASS: ${WORDS.length} words; all 11,767 PDF references; ${PREFIX_VOCAB.length} prefix entries; random rounds/reload; legacy migration; concurrent-device counters; offline/reconnect sync.`)
 } finally {
   await server.close()
 }

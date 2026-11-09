@@ -1,6 +1,7 @@
 import { HashRouter, Navigate, Route, Routes } from "react-router-dom"
 import { Shell } from "./components/Shell"
 import { Home } from "./pages/Home"
+import { Prefix } from "./pages/Prefix"
 import { Room } from "./pages/Room"
 import { Settings } from "./pages/Settings"
 import { Stats } from "./pages/Stats"
@@ -15,6 +16,7 @@ export function App() {
           <Route path="room/:roomId" element={<Room />} />
           <Route path="vocab" element={<Vocab />} />
           <Route path="vocab/:roomId" element={<Vocab />} />
+          <Route path="prefix" element={<Prefix />} />
           <Route path="stats" element={<Stats />} />
           <Route path="settings" element={<Settings />} />
           <Route path="*" element={<Navigate to="/" replace />} />
