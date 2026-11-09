@@ -1,6 +1,6 @@
 import prefixVocabFile from "../data/prefixVocab.json"
 
-export const PREFIXES = ["trans", "pro", "pre", "in", "re", "st"] as const
+export const PREFIXES = ["trans", "pro", "pre", "in", "re", "st", "con"] as const
 
 export type PrefixId = (typeof PREFIXES)[number]
 
@@ -21,7 +21,7 @@ const file = prefixVocabFile as PrefixFile
 const filePrefixes = Object.keys(file.prefixes)
 
 if (filePrefixes.length !== PREFIXES.length || PREFIXES.some((prefix, index) => filePrefixes[index] !== prefix)) {
-  throw new Error("prefixVocab.json prefixes must be trans, pro, pre, in, re, st")
+  throw new Error(`prefixVocab.json prefixes must be ${PREFIXES.join(", ")}`)
 }
 
 export const PREFIX_SOURCE = file.source

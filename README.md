@@ -20,7 +20,7 @@ All **11,767 numbered entries** from five user-provided PDFs are imported as **8
 
 ## Prefix lists
 
-`/#/prefix` (nav: 词缀 Prefix) browses 520 words from 《托福词汇》 that share the prefixes trans-, pro-, pre-, in-, re-, and st-. Filter by prefix, or search by the English word or the Chinese meaning. Meanings can be hidden and revealed one word at a time. The list is a study reference only: it does not change practice progress or the Gist sync.
+`/#/prefix` (nav: 词缀 Prefix) browses 637 words from 《托福词汇》 that share the prefixes trans-, pro-, pre-, in-, re-, st-, and con-. Filter by prefix, or search by the English word or the Chinese meaning. Meanings can be hidden and revealed one word at a time. The list is a study reference only: it does not change practice progress or the Gist sync.
 
 `src/data/prefixVocab.json` stores each word with its source entry number and meaning. PDF radical glyphs in those meanings are stored as ordinary characters; no words were added beyond that list.
 

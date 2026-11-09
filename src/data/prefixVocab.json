@@ -2615,6 +2615,593 @@
         "word": "stylized",
         "meaning": "adj. (绘画、写作等) 非写实的"
       }
+    ],
+    "con": [
+      {
+        "number": 578,
+        "word": "concave",
+        "meaning": "adj. 凹的,凹面的"
+      },
+      {
+        "number": 543,
+        "word": "conceal",
+        "meaning": "vt. 掩盖,隐藏"
+      },
+      {
+        "number": 3067,
+        "word": "concede",
+        "meaning": "vt. 承认...属实;(勉强地) 让与 vi. vt. 承认 (竞赛、选举等的失败)"
+      },
+      {
+        "number": 280,
+        "word": "conceit",
+        "meaning": "n. 自负;幻想,奇想;巧妙的言辞"
+      },
+      {
+        "number": 3478,
+        "word": "conceivable",
+        "meaning": "adj. 可想象的,可信的"
+      },
+      {
+        "number": 4241,
+        "word": "conceive",
+        "meaning": "vt. vi. 想象,想出,构想;怀孕"
+      },
+      {
+        "number": 1071,
+        "word": "concentrate",
+        "meaning": "vi. vt. 全神贯注;(使) 集中 n. 浓缩液,浓缩物"
+      },
+      {
+        "number": 4028,
+        "word": "concentration",
+        "meaning": "n. 全神贯注;汇集;浓度"
+      },
+      {
+        "number": 3798,
+        "word": "concentric",
+        "meaning": "adj. (圆) 同心的"
+      },
+      {
+        "number": 643,
+        "word": "concept",
+        "meaning": "n. 概念,想法"
+      },
+      {
+        "number": 3537,
+        "word": "concern",
+        "meaning": "n. 担心;关心;对...重要的事 vt. 关于;使...担心;涉及,影响"
+      },
+      {
+        "number": 413,
+        "word": "concert",
+        "meaning": "n. 音乐会,演唱会"
+      },
+      {
+        "number": 750,
+        "word": "conciliate",
+        "meaning": "vi. vt. 平息...的怒火,抚慰"
+      },
+      {
+        "number": 1312,
+        "word": "concise",
+        "meaning": "adj. 简洁的,简明的"
+      },
+      {
+        "number": 3329,
+        "word": "conclusive",
+        "meaning": "adj. 确定的,结论性的,不容置疑的"
+      },
+      {
+        "number": 713,
+        "word": "concomitant",
+        "meaning": "adj. 伴随的,并存的 n. 同时发生的事,伴随物"
+      },
+      {
+        "number": 3759,
+        "word": "concord",
+        "meaning": "n. 和睦,和谐,协调"
+      },
+      {
+        "number": 1291,
+        "word": "concrete",
+        "meaning": "adj. 确实的,具体的;混凝土制的 n. 混凝土"
+      },
+      {
+        "number": 1532,
+        "word": "concur",
+        "meaning": "vi. vt. (与某人) 意见一致,同意"
+      },
+      {
+        "number": 2303,
+        "word": "condense",
+        "meaning": "vi. vt. (使) 凝结;(使) 浓缩,变浓稠 vt. 压缩,精简 (文章或讲话)"
+      },
+      {
+        "number": 895,
+        "word": "condiment",
+        "meaning": "n. 调味品,佐料"
+      },
+      {
+        "number": 915,
+        "word": "condole",
+        "meaning": "vi. vt. 悼念,慰问"
+      },
+      {
+        "number": 905,
+        "word": "conducive",
+        "meaning": "adj. 有助于的,有益于的"
+      },
+      {
+        "number": 3373,
+        "word": "conduct",
+        "meaning": "vt. 实施,执行;表现;传导;引导 vi. vt. 指挥 (歌唱或演奏) n. 行为,举止;实施办法"
+      },
+      {
+        "number": 1260,
+        "word": "conductivity",
+        "meaning": "n. 传导性,导电性"
+      },
+      {
+        "number": 3727,
+        "word": "confederacy",
+        "meaning": "n. 联盟,同盟,联邦"
+      },
+      {
+        "number": 309,
+        "word": "confer",
+        "meaning": "vt. 授予,赋予 vi. 商议,协商"
+      },
+      {
+        "number": 1676,
+        "word": "confession",
+        "meaning": "n. 供词;承认,坦白;忏悔"
+      },
+      {
+        "number": 652,
+        "word": "confidant",
+        "meaning": "n. 知己,密友"
+      },
+      {
+        "number": 1846,
+        "word": "confidence",
+        "meaning": "n. 信心,信任;自信;把握;秘密"
+      },
+      {
+        "number": 1340,
+        "word": "configuration",
+        "meaning": "n. 布局,构造;配置"
+      },
+      {
+        "number": 3896,
+        "word": "confine",
+        "meaning": "vt. 限制,使...局限于;监禁,关押"
+      },
+      {
+        "number": 1187,
+        "word": "confirm",
+        "meaning": "vt. 证实,证明;确认 (安排);批准"
+      },
+      {
+        "number": 3757,
+        "word": "confiscate",
+        "meaning": "vt. (作为惩罚) 没收,把...充公"
+      },
+      {
+        "number": 264,
+        "word": "conflict",
+        "meaning": "n. 冲突,争执;矛盾 vi. 相互矛盾,冲突"
+      },
+      {
+        "number": 9,
+        "word": "conform",
+        "meaning": "vi. 遵守;顺应大流;相一致"
+      },
+      {
+        "number": 1708,
+        "word": "confront",
+        "meaning": "vt. 直面,正视;使面对;对峙;对质"
+      },
+      {
+        "number": 3264,
+        "word": "confusion",
+        "meaning": "n. 困惑;混淆;窘迫;混乱的局面"
+      },
+      {
+        "number": 3543,
+        "word": "congenial",
+        "meaning": "adj. (人) 合得来的;适宜的;适合的"
+      },
+      {
+        "number": 3128,
+        "word": "congest",
+        "meaning": "vi. vt. (使) 充满,(使) 拥堵"
+      },
+      {
+        "number": 3130,
+        "word": "congratulation",
+        "meaning": "n. 祝贺,贺辞;恭喜"
+      },
+      {
+        "number": 2394,
+        "word": "congress",
+        "meaning": "n. 代表大会;国会"
+      },
+      {
+        "number": 2619,
+        "word": "congressional",
+        "meaning": "adj. 代表大会的,国会的"
+      },
+      {
+        "number": 1452,
+        "word": "conjure",
+        "meaning": "vi. vt. 变魔术,变戏法"
+      },
+      {
+        "number": 206,
+        "word": "connote",
+        "meaning": "vt. (词) 意味着,隐含"
+      },
+      {
+        "number": 381,
+        "word": "conquer",
+        "meaning": "vt. 占领,征服;克服"
+      },
+      {
+        "number": 1369,
+        "word": "conscientious",
+        "meaning": "adj. 认真的,勤勤恳恳的"
+      },
+      {
+        "number": 1769,
+        "word": "conscious",
+        "meaning": "adj. 意识到的;清醒的;有意的 suff. 注重...的,有...意识的"
+      },
+      {
+        "number": 2951,
+        "word": "consecutive",
+        "meaning": "adj. 连续的,不间断的"
+      },
+      {
+        "number": 1536,
+        "word": "consensus",
+        "meaning": "n. 一致看法,共识"
+      },
+      {
+        "number": 3135,
+        "word": "consent",
+        "meaning": "n. 许可,准许,同意 vi. 许可,准许,同意"
+      },
+      {
+        "number": 3209,
+        "word": "consequence",
+        "meaning": "n. 结果,后果;重要性,价值"
+      },
+      {
+        "number": 3857,
+        "word": "conservation",
+        "meaning": "n. 保护;节约,保存"
+      },
+      {
+        "number": 442,
+        "word": "conservationist",
+        "meaning": "n. 环境保护主义者"
+      },
+      {
+        "number": 3729,
+        "word": "conservative",
+        "meaning": "adj. 保守的;保守党的 n. 保守党党员;保守的人"
+      },
+      {
+        "number": 2184,
+        "word": "conserve",
+        "meaning": "vt. 节约,节省;保护,保存 n. 果酱,蜜饯"
+      },
+      {
+        "number": 2555,
+        "word": "considerate",
+        "meaning": "adj. 体贴的,考虑周到的"
+      },
+      {
+        "number": 2527,
+        "word": "consideration",
+        "meaning": "n. 考虑;须考虑的因素;体谅"
+      },
+      {
+        "number": 1287,
+        "word": "consist",
+        "meaning": "vi. 由...组成;在于"
+      },
+      {
+        "number": 488,
+        "word": "consistency",
+        "meaning": "n. 连贯性,一致性;黏稠度"
+      },
+      {
+        "number": 235,
+        "word": "consistent",
+        "meaning": "adj. 一贯的;与...一致的;连续的"
+      },
+      {
+        "number": 212,
+        "word": "console",
+        "meaning": "vt. 安慰,抚慰,慰藉 n. 控制台,仪表盘"
+      },
+      {
+        "number": 394,
+        "word": "consolidate",
+        "meaning": "vt. vi. (使) 加强,(使) 巩固;(使) 合并"
+      },
+      {
+        "number": 2592,
+        "word": "consonant",
+        "meaning": "n. 辅音;辅音字母 adj. (与...) 一致的,符合的"
+      },
+      {
+        "number": 1685,
+        "word": "consort",
+        "meaning": "n. (统治者的) 配偶 vi. 厮混,鬼混"
+      },
+      {
+        "number": 3259,
+        "word": "conspicuous",
+        "meaning": "adj. 易见的,明显的,惹人注意的"
+      },
+      {
+        "number": 3770,
+        "word": "conspiracy",
+        "meaning": "n. 密谋,阴谋"
+      },
+      {
+        "number": 4191,
+        "word": "constant",
+        "meaning": "adj. 经常的,不断的;恒定的 n. 不变的事物,常数,常量"
+      },
+      {
+        "number": 3596,
+        "word": "constituent",
+        "meaning": "n. 成分;选民 adj. 构成的,组成的"
+      },
+      {
+        "number": 48,
+        "word": "constitute",
+        "meaning": "vlink. 构成,组成;相当于,可算作 vt. 设立,成立"
+      },
+      {
+        "number": 92,
+        "word": "constitution",
+        "meaning": "n. 宪法,章程;体质;构成,成分"
+      },
+      {
+        "number": 89,
+        "word": "constrain",
+        "meaning": "vt. 限制,约束;强迫,迫使"
+      },
+      {
+        "number": 1572,
+        "word": "constricted",
+        "meaning": "adj. 收缩的,狭隘的,受限的"
+      },
+      {
+        "number": 1473,
+        "word": "construct",
+        "meaning": "vt. 建造,修建;组成,构成;绘制 n. 构想,概念,观念"
+      },
+      {
+        "number": 2862,
+        "word": "construction",
+        "meaning": "n. 建造,建筑;建造物;创立"
+      },
+      {
+        "number": 4004,
+        "word": "consult",
+        "meaning": "vt. vi. 向...咨询,求教;与...商量 vt. 查阅,参考"
+      },
+      {
+        "number": 1060,
+        "word": "consume",
+        "meaning": "vt. 消耗,耗费;吃,喝;使充满..."
+      },
+      {
+        "number": 2273,
+        "word": "consumption",
+        "meaning": "n. 消耗 (量);食用 (量);消费"
+      },
+      {
+        "number": 3811,
+        "word": "contagious",
+        "meaning": "adj. 接触性传染的;有感染力的"
+      },
+      {
+        "number": 1438,
+        "word": "contain",
+        "meaning": "vt. 容纳,包含;控制,遏制;克制"
+      },
+      {
+        "number": 1555,
+        "word": "contaminate",
+        "meaning": "vt. 污染,弄脏;玷污,毒害"
+      },
+      {
+        "number": 402,
+        "word": "contamination",
+        "meaning": "n. 污染;毒害,腐蚀"
+      },
+      {
+        "number": 3356,
+        "word": "contemplate",
+        "meaning": "vt. 打算,考虑,沉思;端详,凝视"
+      },
+      {
+        "number": 3558,
+        "word": "contemporary",
+        "meaning": "adj. 当代的,现代的;同时代的 n. 同时期的人,同时代的人"
+      },
+      {
+        "number": 763,
+        "word": "contempt",
+        "meaning": "n. 鄙视,蔑视;藐视法庭"
+      },
+      {
+        "number": 3470,
+        "word": "contender",
+        "meaning": "n. 竞争者"
+      },
+      {
+        "number": 2005,
+        "word": "contest",
+        "meaning": "n. 比赛,竞赛;争夺,竞争 vt. 争辩,提出异议;争取赢得"
+      },
+      {
+        "number": 3831,
+        "word": "context",
+        "meaning": "n. 背景,环境;上下文,语境"
+      },
+      {
+        "number": 2175,
+        "word": "contiguous",
+        "meaning": "adj. 相接的,相邻的"
+      },
+      {
+        "number": 4049,
+        "word": "continent",
+        "meaning": "n. 洲,大陆;欧洲大陆"
+      },
+      {
+        "number": 1294,
+        "word": "continuation",
+        "meaning": "n. 持续,继续,延续"
+      },
+      {
+        "number": 3019,
+        "word": "continuity",
+        "meaning": "n. 连续性;(电影等的) 镜头衔接"
+      },
+      {
+        "number": 3301,
+        "word": "continuum",
+        "meaning": "n. 连续体"
+      },
+      {
+        "number": 1253,
+        "word": "contour",
+        "meaning": "n. 外形,轮廓;等高线 vt. 使与轮廓相吻合 vi. vt. 修容"
+      },
+      {
+        "number": 2708,
+        "word": "contract",
+        "meaning": "n. 合同,合约,契约 vi. vt. (使) 缩小,收缩;签合同 vt. 患上 (疾病)"
+      },
+      {
+        "number": 4112,
+        "word": "contradict",
+        "meaning": "vt. 反驳,否认;相矛盾"
+      },
+      {
+        "number": 3118,
+        "word": "contradictory",
+        "meaning": "adj. 互相矛盾的,对立的"
+      },
+      {
+        "number": 2802,
+        "word": "contrary",
+        "meaning": "adj. 相对立的,相反的"
+      },
+      {
+        "number": 2221,
+        "word": "contrast",
+        "meaning": "n. 差异,差别;截然不同的事物 vt. 对照,对比 vi. 截然不同,有明显差异"
+      },
+      {
+        "number": 1520,
+        "word": "contribute",
+        "meaning": "vt. vi. 捐赠,捐助;做贡献;撰稿 vi. 促使,是导致...的原因之一"
+      },
+      {
+        "number": 4127,
+        "word": "contributor",
+        "meaning": "n. 捐款人;撰稿人;促成因素"
+      },
+      {
+        "number": 469,
+        "word": "contributory",
+        "meaning": "adj. 促成的,促进的,起作用的"
+      },
+      {
+        "number": 1934,
+        "word": "controversial",
+        "meaning": "adj. 有争议的,引发争论的"
+      },
+      {
+        "number": 124,
+        "word": "controversy",
+        "meaning": "n. 争论,争议"
+      },
+      {
+        "number": 3140,
+        "word": "convection",
+        "meaning": "n. (气体、液体的) 对流"
+      },
+      {
+        "number": 3110,
+        "word": "convene",
+        "meaning": "vt. vi. 召集,召开,集合"
+      },
+      {
+        "number": 1908,
+        "word": "convenience",
+        "meaning": "n. 方便,便利;便利设施"
+      },
+      {
+        "number": 255,
+        "word": "convention",
+        "meaning": "n. 习俗,惯例;大会;公约,协定"
+      },
+      {
+        "number": 3527,
+        "word": "converge",
+        "meaning": "vi. 相交;聚集;趋同"
+      },
+      {
+        "number": 2147,
+        "word": "conversation",
+        "meaning": "n. 交谈,谈话"
+      },
+      {
+        "number": 4180,
+        "word": "converse",
+        "meaning": "vi. (与...) 交谈 n. 相反的事物,相反的言论 adj. 相反的,逆的"
+      },
+      {
+        "number": 1918,
+        "word": "conversion",
+        "meaning": "n. 转变,改变;(信仰的) 改变"
+      },
+      {
+        "number": 3877,
+        "word": "convert",
+        "meaning": "vt. vi. (使) 转变,改变;使改变 (信仰) vi. 可转变为,可变化成 n. 皈依者,改变信仰的人"
+      },
+      {
+        "number": 3600,
+        "word": "convex",
+        "meaning": "adj. 凸出的,凸面的"
+      },
+      {
+        "number": 2814,
+        "word": "convey",
+        "meaning": "vt. 表达,传递,传达;运输,运送"
+      },
+      {
+        "number": 1039,
+        "word": "convict",
+        "meaning": "vt. 宣判有罪 n. 已决犯,囚犯"
+      },
+      {
+        "number": 3138,
+        "word": "convince",
+        "meaning": "vt. 使确信,使信服;说服,劝服"
+      }
     ]
   }
 }

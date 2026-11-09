@@ -5,11 +5,11 @@ const server = await createServer({ server: { middlewareMode: true } })
 try {
   const { WORDS, SOURCE_BOOKS, wordsInRoom } = await server.ssrLoadModule("/src/domain/words.ts")
   const { PREFIXES, PREFIX_VOCAB } = await server.ssrLoadModule("/src/domain/prefixVocab.ts")
-  assert.deepEqual([...PREFIXES], ["trans", "pro", "pre", "in", "re", "st"])
-  assert.equal(PREFIX_VOCAB.length, 520)
+  assert.deepEqual([...PREFIXES], ["trans", "pro", "pre", "in", "re", "st", "con"])
+  assert.equal(PREFIX_VOCAB.length, 637)
   assert.deepEqual(
     Object.fromEntries(PREFIXES.map((prefix) => [prefix, PREFIX_VOCAB.filter((entry) => entry.prefix === prefix).length])),
-    { trans: 17, pro: 52, pre: 42, in: 156, re: 173, st: 80 },
+    { trans: 17, pro: 52, pre: 42, in: 156, re: 173, st: 80, con: 117 },
   )
   assert.equal(new Set(PREFIX_VOCAB.map((entry) => entry.id)).size, PREFIX_VOCAB.length)
   for (const entry of PREFIX_VOCAB) {
@@ -21,6 +21,8 @@ try {
   assert.equal(PREFIX_VOCAB.find((entry) => entry.word === "transact").meaning, "vt. vi. 做业务，做交易")
   assert.equal(PREFIX_VOCAB.find((entry) => entry.word === "resident").meaning, "n. 居民，住户；住院实习医生；adj. (在某地) 居住的")
   assert.equal(PREFIX_VOCAB.find((entry) => entry.word === "proclaim").meaning, "vt. 宣布，声明；表明，显示")
+  assert.equal(PREFIX_VOCAB.find((entry) => entry.word === "concur").meaning, "vi. vt. (与某人) 意见一致,同意")
+  assert.equal(PREFIX_VOCAB.find((entry) => entry.word === "consumption").meaning, "n. 消耗 (量);食用 (量);消费")
   const { randomCandidate } = await server.ssrLoadModule("/src/domain/schedule.ts")
   const { mergeStores, parseStoreJson, serializeStore, selfCheckMerge } = await server.ssrLoadModule("/src/domain/mergeProgress.ts")
   const { totalsFor } = await server.ssrLoadModule("/src/domain/progressCounts.ts")
