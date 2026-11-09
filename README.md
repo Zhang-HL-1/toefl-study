@@ -18,6 +18,12 @@ All **11,767 numbered entries** from five user-provided PDFs are imported as **8
 
 `src/data/sources.json` records the source filenames, page counts and expected numbered entries. `src/data/pdfWords.json` contains complete definitions and book/page/index references. No original PDF files are published in this repository.
 
+## Prefix lists
+
+`/#/prefix` (nav: 词缀 Prefix) browses 520 words from 《托福词汇》 that share the prefixes trans-, pro-, pre-, in-, re-, and st-. Filter by prefix, or search by the English word or the Chinese meaning. Meanings can be hidden and revealed one word at a time. The list is a study reference only: it does not change practice progress or the Gist sync.
+
+`src/data/prefixVocab.json` stores each word with its source entry number and meaning. PDF radical glyphs in those meanings are stored as ordinary characters; no words were added beyond that list.
+
 To reproduce the import with the same source PDFs and PyMuPDF installed:
 
 ```bash
@@ -63,4 +69,4 @@ npm run build
 
 Open http://localhost:5173/toefl-study/. `npm test` verifies complete PDF references, unique IDs, resumed random rounds, legacy progress migration, idempotent counter merges, concurrent-device counts and offline/reconnect synchronization against a mocked GitHub API.
 
-`.github/workflows/pages.yml` builds, verifies and deploys `dist/` to GitHub Pages on pushes to `main`. Vite uses `base: '/toefl-study/'` and HashRouter supports direct routes such as `/#/vocab`.
+`.github/workflows/pages.yml` builds, verifies and deploys `dist/` to GitHub Pages on pushes to `main`. Vite uses `base: '/toefl-study/'` and HashRouter supports direct routes such as `/#/vocab` and `/#/prefix`.

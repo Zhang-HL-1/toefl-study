@@ -786,3 +786,51 @@ a { color: inherit; }
 .mistake-row p { font-size: .9rem; color: var(--muted, #716c62); margin: .5rem 0 0; }
 .study-top { flex-wrap: wrap; gap: .5rem; }
 @media(max-width: 600px) { .practice-modes .btn { flex: 1; padding-inline: .6rem; } .room-name { overflow-wrap: anywhere; } }
+
+.nav-en {
+  margin-left: 5px;
+  font-size: 11px;
+  font-weight: 560;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--faint);
+}
+
+.nav a.active .nav-en { color: var(--muted); }
+
+.prefix-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.prefix-tabs .btn { height: 36px; padding: 0 12px; }
+
+.prefix-count {
+  font-size: 12px;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+  opacity: 0.72;
+}
+
+.prefix-meta {
+  margin: 0 0 10px;
+  color: var(--muted);
+  font-size: 13px;
+  font-variant-numeric: tabular-nums;
+}
+
+.prefix-page .gloss {
+  margin: 4px 0 0;
+  font-size: 15px;
+  line-height: 1.45;
+}
+
+.prefix-more { margin-top: 12px; }
+
+.prefix-page .search { width: min(360px, 100%); }
+
+@media (max-width: 780px) {
+  .nav-en { display: none; }
+}

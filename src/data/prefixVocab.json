@@ -1,0 +1,2620 @@
+{
+  "source": {
+    "bookId": "xdf",
+    "title": "托福词汇"
+  },
+  "prefixes": {
+    "trans": [
+      {
+        "number": 2517,
+        "word": "transact",
+        "meaning": "vt. vi. 做业务，做交易"
+      },
+      {
+        "number": 3395,
+        "word": "transaction",
+        "meaning": "n. 交易，业务；(业务) 办理"
+      },
+      {
+        "number": 3957,
+        "word": "transcend",
+        "meaning": "vt. 超出，超越"
+      },
+      {
+        "number": 3415,
+        "word": "transcendent",
+        "meaning": "adj. 卓越的，杰出的，极其伟大的"
+      },
+      {
+        "number": 1974,
+        "word": "transcribe",
+        "meaning": "vt. 记录，抄录，转录；改编 (乐曲)"
+      },
+      {
+        "number": 511,
+        "word": "transfer",
+        "meaning": "vi. vt. 转移，调动；移交；转存；换乘；vt. 转账；转让；传染；n. 转移，调动；转会；换乘"
+      },
+      {
+        "number": 2523,
+        "word": "transform",
+        "meaning": "vt. 转换，改变，改造"
+      },
+      {
+        "number": 1171,
+        "word": "transient",
+        "meaning": "adj. 短暂的；流动的，临时的；n. 暂住者，流浪者"
+      },
+      {
+        "number": 1603,
+        "word": "transit",
+        "meaning": "n. 运输；交通系统；过境，中转；vt. vi. 经过，穿过 (某一地区)"
+      },
+      {
+        "number": 228,
+        "word": "transition",
+        "meaning": "n. 过渡，转变；vi. 过渡，转变"
+      },
+      {
+        "number": 3708,
+        "word": "translation",
+        "meaning": "n. 翻译，译文"
+      },
+      {
+        "number": 1736,
+        "word": "translucent",
+        "meaning": "adj. 半透明的"
+      },
+      {
+        "number": 2327,
+        "word": "transmit",
+        "meaning": "vt. vi. 传送，发送 (信号、信息等)；vt. 传播 (疾病)；传达 (思想)；传导"
+      },
+      {
+        "number": 2994,
+        "word": "transparent",
+        "meaning": "adj. 透明的；明显的；公开的"
+      },
+      {
+        "number": 1127,
+        "word": "transplant",
+        "meaning": "n. 移植；移植的器官；vt. 移植；移栽；使迁移"
+      },
+      {
+        "number": 1816,
+        "word": "transport",
+        "meaning": "n. 交通运输系统；交通工具；运输；vt. 运输；使…仿佛置身于"
+      },
+      {
+        "number": 3930,
+        "word": "transportation",
+        "meaning": "n. 交通运输系统；运输"
+      }
+    ],
+    "pro": [
+      {
+        "number": 370,
+        "word": "proactive",
+        "meaning": "adj. 积极主动的，先发制人的"
+      },
+      {
+        "number": 2873,
+        "word": "probe",
+        "meaning": "vt. vi. 追问，探究，打探；vt. (用细长工具) 探查；n. 详细调查；航天探测器；探针"
+      },
+      {
+        "number": 3227,
+        "word": "procedure",
+        "meaning": "n. 步骤，程序；手术，治疗"
+      },
+      {
+        "number": 3714,
+        "word": "proceed",
+        "meaning": "vi. 继续做，接着做；行进，前往"
+      },
+      {
+        "number": 4243,
+        "word": "process",
+        "meaning": "n. 过程，流程，工序；vt. 加工，处理；审阅，审核"
+      },
+      {
+        "number": 122,
+        "word": "proclaim",
+        "meaning": "vt. 宣布，声明；表明，显示"
+      },
+      {
+        "number": 492,
+        "word": "prodigious",
+        "meaning": "adj. 巨大的，伟大的"
+      },
+      {
+        "number": 3150,
+        "word": "productivity",
+        "meaning": "n. 生产力，生产率"
+      },
+      {
+        "number": 130,
+        "word": "profession",
+        "meaning": "n. 职业；业界人士；公开，表明"
+      },
+      {
+        "number": 808,
+        "word": "proficient",
+        "meaning": "adj. 熟练的，精通的"
+      },
+      {
+        "number": 65,
+        "word": "progressive",
+        "meaning": "adj. 进步的；逐步发生的；进行式的；n. 进步人士，开明人士"
+      },
+      {
+        "number": 112,
+        "word": "prohibit",
+        "meaning": "vt. 禁止；使不可能"
+      },
+      {
+        "number": 1277,
+        "word": "prohibitive",
+        "meaning": "adj. 贵得使人望而却步的；禁止的"
+      },
+      {
+        "number": 3408,
+        "word": "project",
+        "meaning": "n. 项目，方案；专题研究；住宅区；vt. 规划；预测；投射；展现；投掷；vi. 突出，伸出"
+      },
+      {
+        "number": 1424,
+        "word": "projector",
+        "meaning": "n. 投影仪，放映机"
+      },
+      {
+        "number": 2968,
+        "word": "proliferate",
+        "meaning": "vi. 迅速繁殖，猛增"
+      },
+      {
+        "number": 327,
+        "word": "prolific",
+        "meaning": "adj. 创作丰富的；多产的；富饶的"
+      },
+      {
+        "number": 2841,
+        "word": "prolong",
+        "meaning": "vt. 延长，拖延"
+      },
+      {
+        "number": 1122,
+        "word": "prolonged",
+        "meaning": "adj. 持久的，长期的，延长的"
+      },
+      {
+        "number": 1045,
+        "word": "prominent",
+        "meaning": "adj. 杰出的，重要的；显眼的"
+      },
+      {
+        "number": 4022,
+        "word": "promising",
+        "meaning": "adj. 大有希望的，很有前途的"
+      },
+      {
+        "number": 626,
+        "word": "promote",
+        "meaning": "vt. 促进；推销；晋升；提倡"
+      },
+      {
+        "number": 1694,
+        "word": "prompt",
+        "meaning": "vt. 促使；引起，激起；提示；adj. 迅速的，立即的；准时的；n. 提示符；adv. 准时地"
+      },
+      {
+        "number": 1270,
+        "word": "prone",
+        "meaning": "adj. 有…倾向的；俯卧的"
+      },
+      {
+        "number": 3324,
+        "word": "pronounced",
+        "meaning": "adj. 显著的，表达明确的"
+      },
+      {
+        "number": 2961,
+        "word": "proof",
+        "meaning": "n. 证据；证实；求证；校样；adj. 能防范的；suff. 防…的，抗…的；vt. 校对"
+      },
+      {
+        "number": 1654,
+        "word": "proofread",
+        "meaning": "vt. vi. 校对"
+      },
+      {
+        "number": 4186,
+        "word": "propagate",
+        "meaning": "vt. 宣传，传播；vt. vi. (动植物) 繁殖，繁衍"
+      },
+      {
+        "number": 647,
+        "word": "propensity",
+        "meaning": "n. (行为的) 倾向，习性"
+      },
+      {
+        "number": 3717,
+        "word": "proper",
+        "meaning": "adj. 恰当的；像样的；得体的"
+      },
+      {
+        "number": 1869,
+        "word": "property",
+        "meaning": "n. 财产，所有物；房地产；特性"
+      },
+      {
+        "number": 1009,
+        "word": "prophet",
+        "meaning": "n. 预言家；先知；宣扬者，倡导者"
+      },
+      {
+        "number": 706,
+        "word": "proponent",
+        "meaning": "n. 倡导者，支持者"
+      },
+      {
+        "number": 1206,
+        "word": "proposal",
+        "meaning": "n. 提议，提案；求婚"
+      },
+      {
+        "number": 2795,
+        "word": "propose",
+        "meaning": "vt. 提议；打算；提出 (某观点等)；vi. vt. 求婚"
+      },
+      {
+        "number": 1301,
+        "word": "proprietor",
+        "meaning": "n. 业主，所有人"
+      },
+      {
+        "number": 2553,
+        "word": "prose",
+        "meaning": "n. 散文"
+      },
+      {
+        "number": 3991,
+        "word": "prosecute",
+        "meaning": "vt. vi. 起诉；担任控方律师；继续做"
+      },
+      {
+        "number": 1022,
+        "word": "prospect",
+        "meaning": "n. 可能性；展望；前景，前途；vi. 勘探，探矿"
+      },
+      {
+        "number": 2291,
+        "word": "prospector",
+        "meaning": "n. 勘探者，探矿者"
+      },
+      {
+        "number": 2566,
+        "word": "prosper",
+        "meaning": "vi. 兴旺，发达"
+      },
+      {
+        "number": 1614,
+        "word": "prosperity",
+        "meaning": "n. 兴旺，繁荣，发达"
+      },
+      {
+        "number": 3417,
+        "word": "prostitution",
+        "meaning": "n. 卖淫；才能的糟蹋"
+      },
+      {
+        "number": 1119,
+        "word": "protagonist",
+        "meaning": "n. 主角，主人公；主要支持者"
+      },
+      {
+        "number": 4225,
+        "word": "protein",
+        "meaning": "n. 蛋白质"
+      },
+      {
+        "number": 2627,
+        "word": "protest",
+        "meaning": "n. 抗议，反对；vi. vt. 抗议，反对；vt. 申辩，申明"
+      },
+      {
+        "number": 1236,
+        "word": "prototype",
+        "meaning": "n. 原型，雏形；典型"
+      },
+      {
+        "number": 1166,
+        "word": "protrude",
+        "meaning": "vi. 伸出，凸起"
+      },
+      {
+        "number": 2023,
+        "word": "provincialism",
+        "meaning": "n. 胸襟狭隘，陈腐态度，排外主义"
+      },
+      {
+        "number": 3451,
+        "word": "provision",
+        "meaning": "n. 提供，供给；准备；储粮；条款；vt. 给…提供所需物品"
+      },
+      {
+        "number": 3367,
+        "word": "provocative",
+        "meaning": "adj. 挑衅的，煽动的；挑逗的"
+      },
+      {
+        "number": 2607,
+        "word": "provoke",
+        "meaning": "vt. 激起，引起；挑衅，煽动"
+      }
+    ],
+    "pre": [
+      {
+        "number": 3579,
+        "word": "preach",
+        "meaning": "vi. vt. 讲道，布道；宣传，鼓吹；vi. 说教，唠叨"
+      },
+      {
+        "number": 4089,
+        "word": "precautionary",
+        "meaning": "adj. 预防的，防备的，警惕的"
+      },
+      {
+        "number": 332,
+        "word": "precede",
+        "meaning": "vt. vi. 先于…(发生或存在)；vt. 走在…之前"
+      },
+      {
+        "number": 2665,
+        "word": "precious",
+        "meaning": "adj. 珍贵的；珍稀的；被珍惜的；adv. (强调太少) 非常"
+      },
+      {
+        "number": 1309,
+        "word": "precipitate",
+        "meaning": "vt. 使 (坏事突然) 发生；使陷入；vi. vt. (使) 沉淀；adj. 仓促的，贸然的；n. 沉淀物，析出物"
+      },
+      {
+        "number": 2881,
+        "word": "precise",
+        "meaning": "adj. 精确的；确切的；一丝不苟的"
+      },
+      {
+        "number": 2639,
+        "word": "precursor",
+        "meaning": "n. 先驱，前身，先兆"
+      },
+      {
+        "number": 3046,
+        "word": "predator",
+        "meaning": "n. 捕食者，捕食性动物；掠夺者"
+      },
+      {
+        "number": 193,
+        "word": "predecessor",
+        "meaning": "n. 前任，前辈；…的前身"
+      },
+      {
+        "number": 2209,
+        "word": "predict",
+        "meaning": "vt. 预言，预测，预告"
+      },
+      {
+        "number": 478,
+        "word": "predispose",
+        "meaning": "vt. 使倾向于；使易患 (某种病)"
+      },
+      {
+        "number": 1070,
+        "word": "predominant",
+        "meaning": "adj. 占主导地位的，最主要的"
+      },
+      {
+        "number": 2932,
+        "word": "predominate",
+        "meaning": "vi. 占大多数；占主导地位，主宰"
+      },
+      {
+        "number": 1354,
+        "word": "preeminent",
+        "meaning": "adj. 卓越的，杰出的"
+      },
+      {
+        "number": 1947,
+        "word": "prefer",
+        "meaning": "vt. 更喜欢，偏好"
+      },
+      {
+        "number": 3172,
+        "word": "preference",
+        "meaning": "n. 偏好；优惠，优待"
+      },
+      {
+        "number": 3444,
+        "word": "prehistoric",
+        "meaning": "adj. 史前的"
+      },
+      {
+        "number": 2522,
+        "word": "preliminary",
+        "meaning": "adj. 初步的，预备的，开始的；n. 初步行动，准备工作"
+      },
+      {
+        "number": 106,
+        "word": "preliterate",
+        "meaning": "adj. 无文字的，尚未使用文字的"
+      },
+      {
+        "number": 3428,
+        "word": "prelude",
+        "meaning": "n. 序曲，前奏曲；序幕，开端"
+      },
+      {
+        "number": 2728,
+        "word": "premature",
+        "meaning": "adj. 过早的；早产的；仓促的"
+      },
+      {
+        "number": 3949,
+        "word": "premier",
+        "meaning": "adj. 首要的，最好的；n. 总理，首相"
+      },
+      {
+        "number": 2515,
+        "word": "premise",
+        "meaning": "n. 前提；房屋及土地，经营场所"
+      },
+      {
+        "number": 615,
+        "word": "preoccupation",
+        "meaning": "n. 全神贯注，使人专注的事物"
+      },
+      {
+        "number": 2818,
+        "word": "prepare",
+        "meaning": "vt. 使做好准备；做 (饭)；配制 (药)；vt. vi. 使 (自己) 有准备，防范"
+      },
+      {
+        "number": 3311,
+        "word": "preponderance",
+        "meaning": "n. 优势，多数，主体"
+      },
+      {
+        "number": 3528,
+        "word": "prerequisite",
+        "meaning": "n. 先决条件，前提；adj. 作为先决条件的"
+      },
+      {
+        "number": 1479,
+        "word": "prescribe",
+        "meaning": "vt. 开 (药、处方)；规定"
+      },
+      {
+        "number": 3850,
+        "word": "prescription",
+        "meaning": "n. 处方；处方药；对策"
+      },
+      {
+        "number": 1412,
+        "word": "preserve",
+        "meaning": "vt. 维护，保护；保持；保存 (食物)；n. 专门领域；蜜饯，果酱；保护区"
+      },
+      {
+        "number": 3349,
+        "word": "presidency",
+        "meaning": "n. 总统 (或总裁等) 的职位 (任期)"
+      },
+      {
+        "number": 67,
+        "word": "president",
+        "meaning": "n. 总统；会长，主席，校长"
+      },
+      {
+        "number": 1489,
+        "word": "press",
+        "meaning": "n. 报刊；新闻界；印刷机；出版社；vt. vi. 压，按；vt. 把…按入；敦促；把…压平；vi. 拥挤着移动"
+      },
+      {
+        "number": 2741,
+        "word": "prestige",
+        "meaning": "n. 威信，声望；adj. 令人敬仰的，受尊重的；名贵的"
+      },
+      {
+        "number": 2396,
+        "word": "pretension",
+        "meaning": "n. 自命不凡；自诩，标榜"
+      },
+      {
+        "number": 404,
+        "word": "pretentious",
+        "meaning": "adj. 自命不凡的，自我炫耀的"
+      },
+      {
+        "number": 291,
+        "word": "pretext",
+        "meaning": "n. 借口，托辞"
+      },
+      {
+        "number": 1723,
+        "word": "prevail",
+        "meaning": "vi. 盛行；占优势，占上风"
+      },
+      {
+        "number": 4207,
+        "word": "prevailing",
+        "meaning": "adj. 普遍的，流行的；(风) 盛行的"
+      },
+      {
+        "number": 1419,
+        "word": "prevalent",
+        "meaning": "adj. 流行的，盛行的，普遍的"
+      },
+      {
+        "number": 4059,
+        "word": "previous",
+        "meaning": "adj. 先前的；(时间或顺序上) 稍前的"
+      },
+      {
+        "number": 1313,
+        "word": "prey",
+        "meaning": "n. 猎物；受害者；vi. 捕食；坑骗"
+      }
+    ],
+    "in": [
+      {
+        "number": 3656,
+        "word": "inactivate",
+        "meaning": "vt. 使…失活"
+      },
+      {
+        "number": 3491,
+        "word": "inactive",
+        "meaning": "adj. 不活跃的；废弃的；非活性的"
+      },
+      {
+        "number": 428,
+        "word": "inanimate",
+        "meaning": "adj. 无生命的，没有活力的"
+      },
+      {
+        "number": 1384,
+        "word": "inanity",
+        "meaning": "n. 空虚，空洞；无意义的事"
+      },
+      {
+        "number": 3891,
+        "word": "inaugurate",
+        "meaning": "vt. 使正式就任；为…举行落成仪式；vt. 开创"
+      },
+      {
+        "number": 1955,
+        "word": "incapacitate",
+        "meaning": "vt. 使无能力，使伤残"
+      },
+      {
+        "number": 347,
+        "word": "incentive",
+        "meaning": "n. 激励，动机，刺激"
+      },
+      {
+        "number": 1583,
+        "word": "inception",
+        "meaning": "n. 开端，创始"
+      },
+      {
+        "number": 3270,
+        "word": "incessant",
+        "meaning": "adj. 不停的，持续不断的"
+      },
+      {
+        "number": 310,
+        "word": "incessantly",
+        "meaning": "adv. 不停地，持续地"
+      },
+      {
+        "number": 3785,
+        "word": "incident",
+        "meaning": "n. 事件；(两国间的) 冲突"
+      },
+      {
+        "number": 384,
+        "word": "incidental",
+        "meaning": "adj. 附带的，次要的；伴随而来的；n. 附带的次要事情"
+      },
+      {
+        "number": 982,
+        "word": "incinerate",
+        "meaning": "vt. 焚化，焚毁"
+      },
+      {
+        "number": 458,
+        "word": "inclination",
+        "meaning": "n. 意向，倾向；斜坡，斜度；点头"
+      },
+      {
+        "number": 15,
+        "word": "incline",
+        "meaning": "vi. vt. (使) 倾向；(使) 倾斜；vt. 点 (头)；n. 斜坡，斜面"
+      },
+      {
+        "number": 3336,
+        "word": "incoming",
+        "meaning": "adj. 正到达的，正来临的；新上任的"
+      },
+      {
+        "number": 928,
+        "word": "incompatible",
+        "meaning": "adj. 不相容的；合不来的；不兼容的"
+      },
+      {
+        "number": 1608,
+        "word": "incongruity",
+        "meaning": "n. 不一致，不协调"
+      },
+      {
+        "number": 4166,
+        "word": "inconspicuous",
+        "meaning": "adj. 不引人注意的，不显眼的"
+      },
+      {
+        "number": 926,
+        "word": "inconvenient",
+        "meaning": "adj. 不方便的，引起麻烦的"
+      },
+      {
+        "number": 1957,
+        "word": "incorporate",
+        "meaning": "vt. 把…并入，包含；使组成公司"
+      },
+      {
+        "number": 3399,
+        "word": "incredible",
+        "meaning": "adj. 极好的，极大的；难以置信的"
+      },
+      {
+        "number": 566,
+        "word": "incredulous",
+        "meaning": "adj. 不肯相信的，表示怀疑的"
+      },
+      {
+        "number": 1164,
+        "word": "increment",
+        "meaning": "n. 增量，增加；定期的加薪"
+      },
+      {
+        "number": 605,
+        "word": "incubate",
+        "meaning": "vt. vi. 孵化；培养 (细菌等)；(病) 潜伏"
+      },
+      {
+        "number": 290,
+        "word": "incur",
+        "meaning": "vt. 招致，引起，蒙受"
+      },
+      {
+        "number": 1125,
+        "word": "incursion",
+        "meaning": "n. 突然入侵，袭击；介入"
+      },
+      {
+        "number": 1621,
+        "word": "indecipherable",
+        "meaning": "adj. 无法解码的，不可破译的"
+      },
+      {
+        "number": 3350,
+        "word": "independent",
+        "meaning": "adj. 独立的；自立的，自主的；n. 无党派议员"
+      },
+      {
+        "number": 1413,
+        "word": "indicate",
+        "meaning": "vt. 表明，暗示；指向，指示；代表"
+      },
+      {
+        "number": 3599,
+        "word": "indifference",
+        "meaning": "n. 不感兴趣，不关心，冷淡"
+      },
+      {
+        "number": 3471,
+        "word": "indigenous",
+        "meaning": "adj. 当地的，本土的"
+      },
+      {
+        "number": 1805,
+        "word": "indigent",
+        "meaning": "adj. 贫穷的"
+      },
+      {
+        "number": 3061,
+        "word": "indigestion",
+        "meaning": "n. 消化不良 (症)"
+      },
+      {
+        "number": 898,
+        "word": "indignant",
+        "meaning": "adj. 愤慨的，愤怒的"
+      },
+      {
+        "number": 3713,
+        "word": "indispensable",
+        "meaning": "adj. 必不可少的，不可或缺的"
+      },
+      {
+        "number": 3618,
+        "word": "individual",
+        "meaning": "adj. 单独的；个人的；独特的；n. 个人；有个性的人"
+      },
+      {
+        "number": 1002,
+        "word": "indolent",
+        "meaning": "adj. 懒惰的，怠惰的"
+      },
+      {
+        "number": 4173,
+        "word": "induce",
+        "meaning": "vt. 引诱，劝说；引起，导致；催产"
+      },
+      {
+        "number": 554,
+        "word": "induct",
+        "meaning": "vt. 使正式就职；吸收为成员"
+      },
+      {
+        "number": 3924,
+        "word": "industry",
+        "meaning": "n. 工业；行业，产业；勤奋"
+      },
+      {
+        "number": 3849,
+        "word": "inert",
+        "meaning": "adj. 无活动能力的；惰性的；迟缓的"
+      },
+      {
+        "number": 2355,
+        "word": "inertia",
+        "meaning": "n. 惯性；缺乏活力，惰性"
+      },
+      {
+        "number": 996,
+        "word": "inevitably",
+        "meaning": "adv. 不可避免地，必然地"
+      },
+      {
+        "number": 153,
+        "word": "infancy",
+        "meaning": "n. 婴儿期；初期，初创期"
+      },
+      {
+        "number": 3272,
+        "word": "infant",
+        "meaning": "n. 婴儿；幼儿学校的学生；adj. 供婴幼儿用的；初期的，初创的"
+      },
+      {
+        "number": 115,
+        "word": "infatuate",
+        "meaning": "vt. 使冲昏头脑，迷恋"
+      },
+      {
+        "number": 2012,
+        "word": "infection",
+        "meaning": "n. (被) 传染；传染病，感染"
+      },
+      {
+        "number": 3447,
+        "word": "infectious",
+        "meaning": "adj. 传染的；有感染力的"
+      },
+      {
+        "number": 2365,
+        "word": "infiltrate",
+        "meaning": "vt. vi. (使) 渗透，潜入；(液体等) 渗入"
+      },
+      {
+        "number": 4069,
+        "word": "infirm",
+        "meaning": "adj. 年老体弱的，病弱的"
+      },
+      {
+        "number": 173,
+        "word": "inflammation",
+        "meaning": "n. 发炎，炎症"
+      },
+      {
+        "number": 1848,
+        "word": "inflate",
+        "meaning": "vt. vi. (使) 充气，膨胀；(物价) 涨高；vt. 夸大，吹嘘"
+      },
+      {
+        "number": 3553,
+        "word": "influential",
+        "meaning": "adj. 有影响力的，有权势的；n. 有影响力的人"
+      },
+      {
+        "number": 2042,
+        "word": "influenza",
+        "meaning": "n. 流感"
+      },
+      {
+        "number": 69,
+        "word": "influx",
+        "meaning": "n. 涌入，汇集"
+      },
+      {
+        "number": 3465,
+        "word": "inform",
+        "meaning": "vt. 通知，告知；了解；影响"
+      },
+      {
+        "number": 704,
+        "word": "informant",
+        "meaning": "n. 提供信息者，线人，告密者"
+      },
+      {
+        "number": 1394,
+        "word": "informative",
+        "meaning": "adj. 提供信息的，增进知识的"
+      },
+      {
+        "number": 787,
+        "word": "informed",
+        "meaning": "adj. 见多识广的，了解情况的"
+      },
+      {
+        "number": 3385,
+        "word": "infrared",
+        "meaning": "adj. 红外线的，使用红外线的"
+      },
+      {
+        "number": 378,
+        "word": "infuriate",
+        "meaning": "vt. 激怒，使大怒"
+      },
+      {
+        "number": 2702,
+        "word": "ingenious",
+        "meaning": "adj. 精巧的，巧妙的；善于创造的"
+      },
+      {
+        "number": 168,
+        "word": "ingredient",
+        "meaning": "n. 配料，成分；因素"
+      },
+      {
+        "number": 330,
+        "word": "inhabit",
+        "meaning": "vt. 居住于，栖居在"
+      },
+      {
+        "number": 2465,
+        "word": "inherent",
+        "meaning": "adj. 内在的，固有的，与生俱来的"
+      },
+      {
+        "number": 2625,
+        "word": "inherit",
+        "meaning": "vt. vi. 继承；vt. 经遗传获得；接手"
+      },
+      {
+        "number": 3170,
+        "word": "inheritance",
+        "meaning": "n. 遗产；遗传特征；传承物"
+      },
+      {
+        "number": 1337,
+        "word": "inhibit",
+        "meaning": "vt. 抑制，阻碍；使拘束"
+      },
+      {
+        "number": 1511,
+        "word": "initial",
+        "meaning": "adj. 开始的，最初的；n. (名字的) 首字母；vt. 用姓名的首字母签名于"
+      },
+      {
+        "number": 3556,
+        "word": "initiate",
+        "meaning": "vt. 开始，发起；使初步了解；接纳；n. 新入会的人"
+      },
+      {
+        "number": 1879,
+        "word": "inject",
+        "meaning": "vt. 给…注射；给…添加；给…注入"
+      },
+      {
+        "number": 3895,
+        "word": "injurious",
+        "meaning": "adj. 有害的，致伤的"
+      },
+      {
+        "number": 2487,
+        "word": "innate",
+        "meaning": "adj. 天生的，与生俱来的"
+      },
+      {
+        "number": 150,
+        "word": "inner",
+        "meaning": "adj. 里面的，内部的；内心的"
+      },
+      {
+        "number": 90,
+        "word": "innocent",
+        "meaning": "adj. 无罪的；无辜受害的；纯真的；n. 无辜的人，天真的人"
+      },
+      {
+        "number": 1609,
+        "word": "innovate",
+        "meaning": "vi. vt. 革新，创新，改革"
+      },
+      {
+        "number": 4083,
+        "word": "innovative",
+        "meaning": "adj. 创新的，革新的，新颖的"
+      },
+      {
+        "number": 2384,
+        "word": "inquire",
+        "meaning": "vi. vt. 询问，打听"
+      },
+      {
+        "number": 881,
+        "word": "insanity",
+        "meaning": "n. 精神失常；极端的愚蠢 (行为)"
+      },
+      {
+        "number": 411,
+        "word": "inscribe",
+        "meaning": "vt. 在…上写，在…上刻字"
+      },
+      {
+        "number": 3149,
+        "word": "insect",
+        "meaning": "n. 昆虫，虫"
+      },
+      {
+        "number": 2036,
+        "word": "insert",
+        "meaning": "vt. 插入，嵌入；(在文本中) 插入；n. (杂志等的) 广告插页；插入物"
+      },
+      {
+        "number": 641,
+        "word": "insight",
+        "meaning": "n. 深刻见解，洞悉；洞察力"
+      },
+      {
+        "number": 1225,
+        "word": "insist",
+        "meaning": "vt. vi. 坚持，坚决要求；坚称"
+      },
+      {
+        "number": 3821,
+        "word": "insistence",
+        "meaning": "n. 坚持，坚决要求，坚称"
+      },
+      {
+        "number": 2505,
+        "word": "insolvent",
+        "meaning": "adj. 无力偿付债务的，破产的"
+      },
+      {
+        "number": 2469,
+        "word": "inspect",
+        "meaning": "vt. 检查，审视；视察，检阅"
+      },
+      {
+        "number": 779,
+        "word": "inspire",
+        "meaning": "vt. 激励，鼓舞；赋予灵感；激起"
+      },
+      {
+        "number": 1493,
+        "word": "install",
+        "meaning": "vt. 安装；把…装到计算机上；任命"
+      },
+      {
+        "number": 3317,
+        "word": "instance",
+        "meaning": "n. 例子，事例；vt. 举…为例"
+      },
+      {
+        "number": 2853,
+        "word": "instantaneous",
+        "meaning": "adj. 瞬间的，即刻的"
+      },
+      {
+        "number": 2098,
+        "word": "instead",
+        "meaning": "adv. 作为替代，反而"
+      },
+      {
+        "number": 472,
+        "word": "instill",
+        "meaning": "vt. 逐渐灌输"
+      },
+      {
+        "number": 3788,
+        "word": "instinct",
+        "meaning": "n. 本能，天性；直觉"
+      },
+      {
+        "number": 101,
+        "word": "instinctual",
+        "meaning": "adj. 本能的，直觉的"
+      },
+      {
+        "number": 602,
+        "word": "instruct",
+        "meaning": "vt. 指示，吩咐；教授，传授"
+      },
+      {
+        "number": 3443,
+        "word": "instruction",
+        "meaning": "n. 指示，指令；用法说明；指导"
+      },
+      {
+        "number": 4162,
+        "word": "instructor",
+        "meaning": "n. 教练；(大学) 讲师"
+      },
+      {
+        "number": 3801,
+        "word": "instrument",
+        "meaning": "n. 仪器；乐器；仪表；手段；工具"
+      },
+      {
+        "number": 1324,
+        "word": "insufficient",
+        "meaning": "adj. 不充分的，不足的"
+      },
+      {
+        "number": 1641,
+        "word": "insulate",
+        "meaning": "vt. 使隔热，使绝缘，使隔音"
+      },
+      {
+        "number": 221,
+        "word": "insulin",
+        "meaning": "n. 胰岛素"
+      },
+      {
+        "number": 3146,
+        "word": "insult",
+        "meaning": "vt. 辱骂，侮辱；n. 辱骂，侮辱"
+      },
+      {
+        "number": 4046,
+        "word": "insurance",
+        "meaning": "n. 保险 (业)；保险费；预防措施"
+      },
+      {
+        "number": 1719,
+        "word": "intact",
+        "meaning": "adj. 完整无缺的，未受损伤的"
+      },
+      {
+        "number": 2417,
+        "word": "integral",
+        "meaning": "adj. 必不可少的；作为组成部分的"
+      },
+      {
+        "number": 3694,
+        "word": "integrate",
+        "meaning": "vi. vt. (使) 合并；(使) 融入群体"
+      },
+      {
+        "number": 2249,
+        "word": "integrity",
+        "meaning": "n. 正直，诚实；完整，完全"
+      },
+      {
+        "number": 865,
+        "word": "intellect",
+        "meaning": "n. 智力，领悟力；才智非凡的人"
+      },
+      {
+        "number": 314,
+        "word": "intelligence",
+        "meaning": "n. 智力，理解力；情报，情报机构"
+      },
+      {
+        "number": 1872,
+        "word": "intelligent",
+        "meaning": "adj. 聪明的；有智力的；智能的"
+      },
+      {
+        "number": 3357,
+        "word": "intelligible",
+        "meaning": "adj. 可理解的，明白易懂的"
+      },
+      {
+        "number": 1432,
+        "word": "intense",
+        "meaning": "adj. 强烈的；紧张激烈的；热切的"
+      },
+      {
+        "number": 3504,
+        "word": "intent",
+        "meaning": "n. 意图，目的；adj. 坚决的；专心的"
+      },
+      {
+        "number": 1216,
+        "word": "intentionally",
+        "meaning": "adv. 有意地，故意地"
+      },
+      {
+        "number": 550,
+        "word": "interactive",
+        "meaning": "adj. (人机) 交互的；互动的"
+      },
+      {
+        "number": 1345,
+        "word": "interest",
+        "meaning": "n. 兴趣；趣味；爱好；利息；利益；vt. 使感兴趣，使关注"
+      },
+      {
+        "number": 1629,
+        "word": "interface",
+        "meaning": "n. 交互界面；接口；交界面；vi. vt. (使)(与…) 相互联系"
+      },
+      {
+        "number": 288,
+        "word": "interim",
+        "meaning": "adj. 暂时的，过渡的；期中的；n. 期间"
+      },
+      {
+        "number": 91,
+        "word": "interior",
+        "meaning": "n. 内部；内地，内陆；内政；adj. 内部的"
+      },
+      {
+        "number": 1018,
+        "word": "intermediate",
+        "meaning": "adj. 中级的；居中的，中间的；n. 中级水平者"
+      },
+      {
+        "number": 1968,
+        "word": "intern",
+        "meaning": "n. 实习生，(尤指) 实习医师；vt. (因政治原因) 拘留，扣押"
+      },
+      {
+        "number": 3382,
+        "word": "internal",
+        "meaning": "adj. 国内的；内部的；体内的"
+      },
+      {
+        "number": 249,
+        "word": "internship",
+        "meaning": "n. 实习期的工作；实习医生的工作"
+      },
+      {
+        "number": 3509,
+        "word": "interplay",
+        "meaning": "n. 相互作用，相互影响"
+      },
+      {
+        "number": 1006,
+        "word": "interpret",
+        "meaning": "vt. 解释，说明；把…理解为；vi. vt. 口译"
+      },
+      {
+        "number": 216,
+        "word": "interrelate",
+        "meaning": "vi. 互相关联，相互影响"
+      },
+      {
+        "number": 3909,
+        "word": "interrogate",
+        "meaning": "vt. 审讯，盘问"
+      },
+      {
+        "number": 3833,
+        "word": "interrupt",
+        "meaning": "vi. vt. 打断，打扰；vt. 使中断，使暂停；遮挡，阻断"
+      },
+      {
+        "number": 3499,
+        "word": "intersection",
+        "meaning": "n. 交点，道路交叉口；交叉"
+      },
+      {
+        "number": 2525,
+        "word": "interstellar",
+        "meaning": "adj. 星际的"
+      },
+      {
+        "number": 2670,
+        "word": "interval",
+        "meaning": "n. 间隔；中场休息"
+      },
+      {
+        "number": 395,
+        "word": "intervening",
+        "meaning": "adj. 发生于其间的，介于中间的"
+      },
+      {
+        "number": 1275,
+        "word": "interweave",
+        "meaning": "vt. vi. 交织，紧密结合"
+      },
+      {
+        "number": 3956,
+        "word": "intimate",
+        "meaning": "adj. 亲密的；隐私的；幽静舒适的；vt. 透露，(间接) 表示，暗示；n. 知己，密友，至交"
+      },
+      {
+        "number": 1821,
+        "word": "intoxication",
+        "meaning": "n. 醉酒；陶醉"
+      },
+      {
+        "number": 51,
+        "word": "intrepid",
+        "meaning": "adj. 勇敢的，无畏的"
+      },
+      {
+        "number": 164,
+        "word": "intricate",
+        "meaning": "adj. 错综复杂的"
+      },
+      {
+        "number": 205,
+        "word": "intrigue",
+        "meaning": "vt. 激起…的兴趣，引起…的好奇；vi. 密谋，施诡计；n. 密谋，阴谋；引人入胜的特质"
+      },
+      {
+        "number": 607,
+        "word": "intriguing",
+        "meaning": "adj. 非常有趣的，引人入胜的"
+      },
+      {
+        "number": 3795,
+        "word": "intrinsic",
+        "meaning": "adj. 本质的，内在的，固有的"
+      },
+      {
+        "number": 2985,
+        "word": "introduction",
+        "meaning": "n. 采用，引进；介绍；序言"
+      },
+      {
+        "number": 984,
+        "word": "intrude",
+        "meaning": "vi. 闯入，侵入；打扰，干涉"
+      },
+      {
+        "number": 1329,
+        "word": "intrusion",
+        "meaning": "n. 闯入；干扰，侵扰"
+      },
+      {
+        "number": 1714,
+        "word": "intuitive",
+        "meaning": "adj. 基于直觉的；有直觉力的；直观的"
+      },
+      {
+        "number": 4063,
+        "word": "invalid",
+        "meaning": "adj. 无法律效力的；站不住脚的；n. 病弱者，伤残者"
+      },
+      {
+        "number": 2085,
+        "word": "invasion",
+        "meaning": "n. 入侵，侵略；涌入；侵犯"
+      },
+      {
+        "number": 759,
+        "word": "invasive",
+        "meaning": "adj. 侵袭的；(医疗) 手术的；入侵的"
+      },
+      {
+        "number": 3827,
+        "word": "inventory",
+        "meaning": "n. 存货清单；储备，存货，库存；vt. 开列…的清单，把…编入目录"
+      },
+      {
+        "number": 219,
+        "word": "inverse",
+        "meaning": "adj. 成反比的，相反的；n. 与…相反的事物，对立面"
+      },
+      {
+        "number": 3574,
+        "word": "invert",
+        "meaning": "vt. (使) 颠倒，逆转，倒置"
+      },
+      {
+        "number": 3853,
+        "word": "invertebrate",
+        "meaning": "n. 无脊椎动物；adj. 无脊椎的"
+      },
+      {
+        "number": 3513,
+        "word": "investigate",
+        "meaning": "vi. vt. 调查，研究"
+      },
+      {
+        "number": 526,
+        "word": "inviting",
+        "meaning": "adj. 诱人的，吸引人的"
+      },
+      {
+        "number": 1702,
+        "word": "involve",
+        "meaning": "vt. 需要，包含；牵涉，涉及；使参与"
+      }
+    ],
+    "re": [
+      {
+        "number": 2559,
+        "word": "reactor",
+        "meaning": "n. 核反应堆"
+      },
+      {
+        "number": 399,
+        "word": "readily",
+        "meaning": "adv. 轻而易举地；乐意地，欣然地"
+      },
+      {
+        "number": 3461,
+        "word": "realistic",
+        "meaning": "adj. 现实的；能实现的；逼真的"
+      },
+      {
+        "number": 4008,
+        "word": "realization",
+        "meaning": "n. 认识，领悟；实现"
+      },
+      {
+        "number": 2526,
+        "word": "realm",
+        "meaning": "n. 领域，范围；王国"
+      },
+      {
+        "number": 1797,
+        "word": "realtor",
+        "meaning": "n. 房地产经纪人"
+      },
+      {
+        "number": 1615,
+        "word": "reapply",
+        "meaning": "vt. 再涂一层；再利用；vi. 重新申请，再次申请"
+      },
+      {
+        "number": 3843,
+        "word": "rear",
+        "meaning": "n. 后部；adj. 后面的，后部的；vt. 抚养，养育；饲养；vi. (尤指马) 用后腿直立；巍然耸立"
+      },
+      {
+        "number": 4033,
+        "word": "reasonable",
+        "meaning": "adj. 合理的；理智的，讲道理的；adj. (价钱) 公道的；还行的"
+      },
+      {
+        "number": 2493,
+        "word": "rebate",
+        "meaning": "n. 退还款；回扣，折扣"
+      },
+      {
+        "number": 2630,
+        "word": "rebel",
+        "meaning": "n. 叛军；叛逆者；vi. 反抗，反对"
+      },
+      {
+        "number": 226,
+        "word": "rebellious",
+        "meaning": "adj. 叛逆的，不听话的；叛乱的"
+      },
+      {
+        "number": 3284,
+        "word": "recall",
+        "meaning": "vt. vi. 记起，回忆起；vt. 召回；收回 (残次品)；使想起；n. 记忆力；召回"
+      },
+      {
+        "number": 2010,
+        "word": "receiver",
+        "meaning": "n. 接收器；听筒；接收人"
+      },
+      {
+        "number": 70,
+        "word": "receptacle",
+        "meaning": "n. 容器"
+      },
+      {
+        "number": 1229,
+        "word": "reception",
+        "meaning": "n. 接待处；欢迎，接受；接收效果；n. 欢迎会，招待会"
+      },
+      {
+        "number": 3731,
+        "word": "receptor",
+        "meaning": "n. 感受器，受体"
+      },
+      {
+        "number": 3219,
+        "word": "recession",
+        "meaning": "n. 经济衰退，经济不景气"
+      },
+      {
+        "number": 4143,
+        "word": "recessive",
+        "meaning": "adj. (遗传基因) 隐性的"
+      },
+      {
+        "number": 336,
+        "word": "recharge",
+        "meaning": "vt. vi. 给 (电池) 充电，充电；vi. 恢复体力，休整"
+      },
+      {
+        "number": 4088,
+        "word": "recipe",
+        "meaning": "n. 食谱，烹饪法；原因，秘诀"
+      },
+      {
+        "number": 2136,
+        "word": "recipient",
+        "meaning": "n. 接受者，领受人"
+      },
+      {
+        "number": 2429,
+        "word": "reciprocal",
+        "meaning": "adj. 互惠的，相互的"
+      },
+      {
+        "number": 3549,
+        "word": "reciprocity",
+        "meaning": "n. 互惠，互助，互换"
+      },
+      {
+        "number": 4176,
+        "word": "recital",
+        "meaning": "n. 演奏会，朗诵会；口头描述"
+      },
+      {
+        "number": 3644,
+        "word": "reckless",
+        "meaning": "adj. 鲁莽的，不顾后果的"
+      },
+      {
+        "number": 3274,
+        "word": "recline",
+        "meaning": "vi. 斜倚，向后倚靠；vi. vt. (使座椅靠背) 向后倾"
+      },
+      {
+        "number": 1352,
+        "word": "recognition",
+        "meaning": "n. 认出，识别；承认，认可；赞赏"
+      },
+      {
+        "number": 2006,
+        "word": "recognize",
+        "meaning": "vt. 认出；承认；公认；表彰"
+      },
+      {
+        "number": 2719,
+        "word": "recoil",
+        "meaning": "vi. 退缩，畏缩；踌躇不前；n. 反冲，(尤指枪炮的) 后坐力"
+      },
+      {
+        "number": 3129,
+        "word": "recollection",
+        "meaning": "n. 记忆力，回忆；往事"
+      },
+      {
+        "number": 1992,
+        "word": "recommend",
+        "meaning": "vt. 推荐；建议；使受欢迎"
+      },
+      {
+        "number": 3988,
+        "word": "reconcile",
+        "meaning": "vt. 使和谐一致；使和好；妥协"
+      },
+      {
+        "number": 2509,
+        "word": "recoup",
+        "meaning": "vt. 收回 (成本)，弥补 (亏损)"
+      },
+      {
+        "number": 4,
+        "word": "recover",
+        "meaning": "vi. 恢复，复原；康复，痊愈；vt. 恢复 (知觉等)；全额收回；找回"
+      },
+      {
+        "number": 3968,
+        "word": "recreation",
+        "meaning": "n. 休闲，娱乐；再现"
+      },
+      {
+        "number": 239,
+        "word": "rectangle",
+        "meaning": "n. 长方形，矩形"
+      },
+      {
+        "number": 1468,
+        "word": "rectify",
+        "meaning": "vt. 纠正，矫正"
+      },
+      {
+        "number": 3510,
+        "word": "recurring",
+        "meaning": "adj. 反复出现的，再次发生的"
+      },
+      {
+        "number": 3493,
+        "word": "recycle",
+        "meaning": "vt. 回收利用，循环利用"
+      },
+      {
+        "number": 2861,
+        "word": "reddish",
+        "meaning": "adj. 微红的"
+      },
+      {
+        "number": 2511,
+        "word": "redeem",
+        "meaning": "vt. 弥补；拯救；兑换；赎回；vt. 履行，遵守 (诺言)"
+      },
+      {
+        "number": 218,
+        "word": "redundant",
+        "meaning": "adj. 多余的，累赘的；被裁员的"
+      },
+      {
+        "number": 66,
+        "word": "reef",
+        "meaning": "n. 礁；帆的可收缩部；vt. 收帆"
+      },
+      {
+        "number": 978,
+        "word": "refer",
+        "meaning": "vi. 提及；指，关于；参考，查阅"
+      },
+      {
+        "number": 2676,
+        "word": "reference",
+        "meaning": "n. 提到；参考 (书目)；推荐信；vt. 查阅，参考"
+      },
+      {
+        "number": 1049,
+        "word": "refine",
+        "meaning": "vt. 提炼，精炼；改善，改良"
+      },
+      {
+        "number": 2870,
+        "word": "reflect",
+        "meaning": "vt. 映出 (影像)；反射；反映，显示；vi. vt. 认真思考"
+      },
+      {
+        "number": 1728,
+        "word": "reflection",
+        "meaning": "n. 映像；反射；反映；深思"
+      },
+      {
+        "number": 2788,
+        "word": "reform",
+        "meaning": "n. 变革，改革，革新；vt. 变革，改革，革新；vi. vt. (使) 改过自新"
+      },
+      {
+        "number": 639,
+        "word": "refraction",
+        "meaning": "n. 折射"
+      },
+      {
+        "number": 999,
+        "word": "refrain",
+        "meaning": "vi. 克制，忍住，避免；n. 陈词滥调；副歌，叠句"
+      },
+      {
+        "number": 2827,
+        "word": "refreshing",
+        "meaning": "adj. 令人耳目一新的；提神的"
+      },
+      {
+        "number": 2455,
+        "word": "refrigerate",
+        "meaning": "vt. 冷冻，冷藏"
+      },
+      {
+        "number": 2401,
+        "word": "refurbish",
+        "meaning": "vt. 再装修，翻新"
+      },
+      {
+        "number": 903,
+        "word": "refute",
+        "meaning": "vt. 反驳，否认…的正确性"
+      },
+      {
+        "number": 1503,
+        "word": "regardless",
+        "meaning": "adv. 不管；不管怎样，无论如何"
+      },
+      {
+        "number": 4019,
+        "word": "regenerate",
+        "meaning": "vt. 使振兴，使复兴；vi. vt. 再生，使再生"
+      },
+      {
+        "number": 438,
+        "word": "region",
+        "meaning": "n. 地区，区域；行政区；身体部位"
+      },
+      {
+        "number": 931,
+        "word": "register",
+        "meaning": "vt. vi. 注册，登记；流露出；注意到；vt. vi. 显示 (读数)，记录；vt. (正式地) 发表意见；挂号邮寄；n. 登记表；音区；现金收纳机"
+      },
+      {
+        "number": 2752,
+        "word": "regular",
+        "meaning": "adj. 有规律的；频繁的；通常的；n. 常客，老主顾；含铅汽油"
+      },
+      {
+        "number": 2926,
+        "word": "regulate",
+        "meaning": "vt. vi. (以规章) 管理，约束；vt. 调整，调节"
+      },
+      {
+        "number": 688,
+        "word": "rehabilitate",
+        "meaning": "vt. 协助康复；恢复名誉；修复"
+      },
+      {
+        "number": 796,
+        "word": "rehearse",
+        "meaning": "vi. vt. (使) 排练，(使) 预演；vt. 默诵，默默练习；反复讲"
+      },
+      {
+        "number": 3982,
+        "word": "reign",
+        "meaning": "n. 君主统治时期；任期，当政期；vi. 统治，当政；成为最佳；盛行"
+      },
+      {
+        "number": 583,
+        "word": "reinforce",
+        "meaning": "vt. 加强，增强；加固；增援"
+      },
+      {
+        "number": 2769,
+        "word": "reiterate",
+        "meaning": "vt. 重申"
+      },
+      {
+        "number": 3239,
+        "word": "rejuvenate",
+        "meaning": "vt. 使年轻，使更有活力"
+      },
+      {
+        "number": 2406,
+        "word": "rekindle",
+        "meaning": "vt. 重新激起，重新燃起"
+      },
+      {
+        "number": 2646,
+        "word": "relate",
+        "meaning": "vt. vi. 联系，(使) 有关联；vt. 叙述，讲述；vi. 涉及，关于；理解，有共鸣"
+      },
+      {
+        "number": 3721,
+        "word": "relative",
+        "meaning": "n. 亲戚，亲属；adj. 相对的；与…相比；关于…的"
+      },
+      {
+        "number": 2266,
+        "word": "relay",
+        "meaning": "vt. 传递，转发；转播；n. 接力赛；接班人；中继设备"
+      },
+      {
+        "number": 646,
+        "word": "release",
+        "meaning": "vt. 释放；松开；发泄；解雇；发布；n. 释放；公开，发行；排放；解脱"
+      },
+      {
+        "number": 2764,
+        "word": "relegate",
+        "meaning": "vt. 使贬职，使降级，降低…的地位"
+      },
+      {
+        "number": 3161,
+        "word": "relevance",
+        "meaning": "n. (对…的) 意义，相关性"
+      },
+      {
+        "number": 3622,
+        "word": "relevant",
+        "meaning": "adj. 有关的，切题的；有价值的"
+      },
+      {
+        "number": 1579,
+        "word": "reliable",
+        "meaning": "adj. 可信赖的，可依靠的"
+      },
+      {
+        "number": 4039,
+        "word": "reliance",
+        "meaning": "n. 依赖，依靠"
+      },
+      {
+        "number": 3942,
+        "word": "relic",
+        "meaning": "n. 遗物，遗迹，遗风；圣骨，圣物"
+      },
+      {
+        "number": 812,
+        "word": "relief",
+        "meaning": "n. 宽慰；减轻，缓和；救济 (金)"
+      },
+      {
+        "number": 3808,
+        "word": "relieve",
+        "meaning": "vt. 减轻，缓和；给…换班；解手"
+      },
+      {
+        "number": 1610,
+        "word": "reliever",
+        "meaning": "n. 缓解物；后援投手"
+      },
+      {
+        "number": 2813,
+        "word": "reluctant",
+        "meaning": "adj. 勉强的，不情愿的"
+      },
+      {
+        "number": 2839,
+        "word": "rely",
+        "meaning": "vi. 依靠；信任"
+      },
+      {
+        "number": 2345,
+        "word": "remainder",
+        "meaning": "n. 剩余部分，剩余物；余数"
+      },
+      {
+        "number": 2386,
+        "word": "remains",
+        "meaning": "n. 残余，剩余物，遗迹；遗体"
+      },
+      {
+        "number": 245,
+        "word": "remark",
+        "meaning": "n. 评论，意见；vi. vt. 评论，谈到"
+      },
+      {
+        "number": 1952,
+        "word": "remarkable",
+        "meaning": "adj. 非凡的，不同寻常的"
+      },
+      {
+        "number": 3014,
+        "word": "remind",
+        "meaning": "vt. 提醒；使想起"
+      },
+      {
+        "number": 2623,
+        "word": "remnant",
+        "meaning": "n. 残余部分"
+      },
+      {
+        "number": 3384,
+        "word": "remodel",
+        "meaning": "vt. 改造，重塑"
+      },
+      {
+        "number": 1582,
+        "word": "remote",
+        "meaning": "adj. 偏远的，遥远的；久远的；adj. 微乎其微的；远程的；冷淡的；n. 遥控器"
+      },
+      {
+        "number": 1323,
+        "word": "removal",
+        "meaning": "n. 移走，拿走；消除；免职；搬迁"
+      },
+      {
+        "number": 6,
+        "word": "renaissance",
+        "meaning": "n. 文艺复兴 (时期)；重新流行"
+      },
+      {
+        "number": 2041,
+        "word": "render",
+        "meaning": "vt. 使变得；给予，提供；表达；翻译"
+      },
+      {
+        "number": 3645,
+        "word": "rendition",
+        "meaning": "n. 表演，演奏；非常规引渡"
+      },
+      {
+        "number": 234,
+        "word": "renew",
+        "meaning": "vt. 延长，使续期；重新开始；更换"
+      },
+      {
+        "number": 3515,
+        "word": "renovate",
+        "meaning": "vt. 修复，改造，翻新"
+      },
+      {
+        "number": 24,
+        "word": "renown",
+        "meaning": "n. 名誉，声望"
+      },
+      {
+        "number": 2953,
+        "word": "rental",
+        "meaning": "n. 租金；出租，租赁；租用的东西"
+      },
+      {
+        "number": 3534,
+        "word": "repel",
+        "meaning": "vt. 驱逐，赶走；使厌恶，使反感；vi. vt. (磁极等) 排斥，相斥"
+      },
+      {
+        "number": 2958,
+        "word": "repertoire",
+        "meaning": "n. 全部节目，曲目；全部技能"
+      },
+      {
+        "number": 809,
+        "word": "repertory",
+        "meaning": "n. 保留剧目轮演"
+      },
+      {
+        "number": 2696,
+        "word": "repetition",
+        "meaning": "n. 重复；重复的事物"
+      },
+      {
+        "number": 2704,
+        "word": "replace",
+        "meaning": "vt. 替换；更换；把…放回原处"
+      },
+      {
+        "number": 4167,
+        "word": "replenish",
+        "meaning": "vt. 补充，把…重新装满"
+      },
+      {
+        "number": 292,
+        "word": "replica",
+        "meaning": "n. 复制品，仿制品"
+      },
+      {
+        "number": 1427,
+        "word": "replicate",
+        "meaning": "vt. 重做，(精确地) 复制；vt. vi. (微生物、细胞等) 自我复制"
+      },
+      {
+        "number": 1208,
+        "word": "represent",
+        "meaning": "vt. 代表；体现；表示；描绘；vlink. 相当于，意味着"
+      },
+      {
+        "number": 2307,
+        "word": "representative",
+        "meaning": "n. 代表；(美国) 众议院议员；adj. 典型的，有代表性的；代议制的"
+      },
+      {
+        "number": 2933,
+        "word": "reproach",
+        "meaning": "n. 责备，批评；丢脸；vt. 责备；为…感到内疚"
+      },
+      {
+        "number": 3113,
+        "word": "reproduce",
+        "meaning": "vt. 复制，翻印；使再现，再制造；vi. vt. 繁殖，生殖"
+      },
+      {
+        "number": 3223,
+        "word": "reptile",
+        "meaning": "n. 爬行动物"
+      },
+      {
+        "number": 3815,
+        "word": "republic",
+        "meaning": "n. 共和国，共和政体"
+      },
+      {
+        "number": 3038,
+        "word": "reputation",
+        "meaning": "n. 名誉，名声"
+      },
+      {
+        "number": 187,
+        "word": "repute",
+        "meaning": "n. 名声，名誉"
+      },
+      {
+        "number": 432,
+        "word": "request",
+        "meaning": "n. 请求，要求；点播的歌曲；vt. 请求，要求"
+      },
+      {
+        "number": 3608,
+        "word": "require",
+        "meaning": "vt. 需要；要求，规定"
+      },
+      {
+        "number": 3312,
+        "word": "reschedule",
+        "meaning": "vt. 将…改期；推迟还款"
+      },
+      {
+        "number": 147,
+        "word": "rescue",
+        "meaning": "vt. 营救，救援；n. 营救，营救活动"
+      },
+      {
+        "number": 610,
+        "word": "resemble",
+        "meaning": "vt. 看起来像，与…相似"
+      },
+      {
+        "number": 2775,
+        "word": "resent",
+        "meaning": "vt. 怨恨，憎恶"
+      },
+      {
+        "number": 3051,
+        "word": "reservation",
+        "meaning": "n. 预订，预约；保留意见；保留地"
+      },
+      {
+        "number": 436,
+        "word": "reserve",
+        "meaning": "vt. 预订，预约；预留；保留 (权利)；n. 储备 (量)；自然保护区；内向"
+      },
+      {
+        "number": 4002,
+        "word": "reservoir",
+        "meaning": "n. 水库；大量储备；储液器"
+      },
+      {
+        "number": 1763,
+        "word": "reside",
+        "meaning": "vi. 居住，定居；存在于；属于"
+      },
+      {
+        "number": 3066,
+        "word": "resident",
+        "meaning": "n. 居民，住户；住院实习医生；adj. (在某地) 居住的"
+      },
+      {
+        "number": 3719,
+        "word": "residue",
+        "meaning": "n. 剩余物，残留物"
+      },
+      {
+        "number": 3887,
+        "word": "resign",
+        "meaning": "vi. vt. 辞职；vt. 使顺从"
+      },
+      {
+        "number": 2543,
+        "word": "resilience",
+        "meaning": "n. 恢复力，适应力；弹性"
+      },
+      {
+        "number": 3830,
+        "word": "resin",
+        "meaning": "n. 树脂；合成树脂"
+      },
+      {
+        "number": 3265,
+        "word": "resist",
+        "meaning": "vt. vi. 按捺，克制；抵抗，抵制；抵御；vt. 经得起，抗 (伤害)"
+      },
+      {
+        "number": 3791,
+        "word": "resistant",
+        "meaning": "adj. 有抵抗力的；反对的，抵制的；suff. 抗…的，耐…的"
+      },
+      {
+        "number": 389,
+        "word": "resolute",
+        "meaning": "adj. 坚决的，坚定的，果断的"
+      },
+      {
+        "number": 2324,
+        "word": "resolve",
+        "meaning": "vt. 解决；vt. vi. 决心，决定；n. 决心，坚定的信念"
+      },
+      {
+        "number": 1701,
+        "word": "resonance",
+        "meaning": "n. 洪亮；共鸣"
+      },
+      {
+        "number": 1999,
+        "word": "resort",
+        "meaning": "n. 度假胜地；采用的方法；vi. 诉诸，求助"
+      },
+      {
+        "number": 4259,
+        "word": "resource",
+        "meaning": "n. 资源，物力；资料；机敏；vt. 向…提供资金 (或设备)"
+      },
+      {
+        "number": 2247,
+        "word": "respect",
+        "meaning": "n. 尊敬，尊重；方面；vt. 尊敬，尊重；遵守"
+      },
+      {
+        "number": 2621,
+        "word": "respective",
+        "meaning": "adj. 分别的，各自的"
+      },
+      {
+        "number": 2131,
+        "word": "respire",
+        "meaning": "vi. 呼吸"
+      },
+      {
+        "number": 269,
+        "word": "respond",
+        "meaning": "vi. vt. 回复，回答；vi. 作出反应；有良好反应"
+      },
+      {
+        "number": 2059,
+        "word": "respondent",
+        "meaning": "n. 调查对象；被告"
+      },
+      {
+        "number": 4221,
+        "word": "response",
+        "meaning": "n. 回答，答复；反应，回应"
+      },
+      {
+        "number": 2258,
+        "word": "responsible",
+        "meaning": "adj. 负责的；应担责的；作为原因的"
+      },
+      {
+        "number": 3229,
+        "word": "restoration",
+        "meaning": "n. 修复，整修；恢复"
+      },
+      {
+        "number": 1667,
+        "word": "restore",
+        "meaning": "vt. 恢复；修复，使复原；归还"
+      },
+      {
+        "number": 2331,
+        "word": "restraint",
+        "meaning": "n. 克制，抑制；限制；安全装置"
+      },
+      {
+        "number": 2079,
+        "word": "restrict",
+        "meaning": "vt. 限制，约束"
+      },
+      {
+        "number": 2794,
+        "word": "resume",
+        "meaning": "vt. vi. 继续，重新开始；vt. 恢复 (职位)，回到 (座位)；n. 简历，履历；摘要，概述"
+      },
+      {
+        "number": 2354,
+        "word": "retain",
+        "meaning": "vt. 保持，保留；储存；预聘 (律师)"
+      },
+      {
+        "number": 1751,
+        "word": "retire",
+        "meaning": "vi. vt. (使) 退休；vi. 退出，离开；退出比赛，退役"
+      },
+      {
+        "number": 1001,
+        "word": "retract",
+        "meaning": "vt. 撤销，收回；vi. vt. (使) 缩回"
+      },
+      {
+        "number": 3331,
+        "word": "retreat",
+        "meaning": "vi. 撤退；后退；撤回 (计划)；躲避；n. 撤退；逃避；僻静处；静修"
+      },
+      {
+        "number": 1626,
+        "word": "retrieval",
+        "meaning": "n. 取回，找回；数据检索"
+      },
+      {
+        "number": 2693,
+        "word": "retrieve",
+        "meaning": "vt. 取回，找回；检索数据；挽回"
+      },
+      {
+        "number": 1090,
+        "word": "retrospect",
+        "meaning": "n. 回顾，回想"
+      },
+      {
+        "number": 467,
+        "word": "retrospective",
+        "meaning": "adj. 回顾的；有追溯力的；n. (画家、演员等作品的) 回顾展"
+      },
+      {
+        "number": 365,
+        "word": "reunion",
+        "meaning": "n. 聚会；重聚，重逢；再联合"
+      },
+      {
+        "number": 3555,
+        "word": "reveal",
+        "meaning": "vt. 揭示，揭露；展现，显露"
+      },
+      {
+        "number": 1248,
+        "word": "revenue",
+        "meaning": "n. 收入，财政收入，税收"
+      },
+      {
+        "number": 57,
+        "word": "revere",
+        "meaning": "vt. 崇敬，尊敬"
+      },
+      {
+        "number": 1917,
+        "word": "reverse",
+        "meaning": "vt. 逆转，扭转；撤销，推翻；使反转；vi. vt. 倒车；n. 相反的情况；背面；倒挡；损失；adj. 相反的，反面的"
+      },
+      {
+        "number": 2163,
+        "word": "reversible",
+        "meaning": "adj. 可逆的；可两面穿的"
+      },
+      {
+        "number": 950,
+        "word": "revert",
+        "meaning": "vi. 恢复，回复；回到，重提；归还"
+      },
+      {
+        "number": 4232,
+        "word": "review",
+        "meaning": "n. 评论；审查；回顾；复习；vt. 写评论；审查；回顾；复习"
+      },
+      {
+        "number": 2837,
+        "word": "revise",
+        "meaning": "vt. 改变 (想法)；修改，修订；vi. vt. 复习"
+      },
+      {
+        "number": 854,
+        "word": "revitalize",
+        "meaning": "vt. 给予…新的活力，使复兴"
+      },
+      {
+        "number": 2834,
+        "word": "revival",
+        "meaning": "n. 复兴，复苏，再流行；重新上演"
+      },
+      {
+        "number": 2710,
+        "word": "revoke",
+        "meaning": "vt. 废除，取消"
+      },
+      {
+        "number": 1147,
+        "word": "revolt",
+        "meaning": "n. 反叛，造反；vi. 反叛，造反；vt. 使惊骇，令人厌恶"
+      },
+      {
+        "number": 328,
+        "word": "revolution",
+        "meaning": "n. 革命；变革；旋转；旋转一周"
+      },
+      {
+        "number": 1429,
+        "word": "reward",
+        "meaning": "n. 奖赏，回报；赏金；vt. 奖励，酬谢"
+      }
+    ],
+    "st": [
+      {
+        "number": 465,
+        "word": "stable",
+        "meaning": "adj. 稳定的，稳固的；(人) 稳重的；n. 马厩；养马场；vt. 使 (马) 入厩"
+      },
+      {
+        "number": 3933,
+        "word": "stack",
+        "meaning": "n. (整齐的) 一堆；大量；大烟囱；vt. vi. (使) 放成整齐的一叠；vt. 使成叠地放在"
+      },
+      {
+        "number": 311,
+        "word": "stadium",
+        "meaning": "n. 露天体育场"
+      },
+      {
+        "number": 4024,
+        "word": "staff",
+        "meaning": "n. 全体职员；(学校) 行政人员；vt. 担当…职员，任职于"
+      },
+      {
+        "number": 3824,
+        "word": "stage",
+        "meaning": "n. 阶段；步骤；舞台；vt. 上演，举办；组织，筹划"
+      },
+      {
+        "number": 1052,
+        "word": "stagecoach",
+        "meaning": "n. 驿站马车，公共马车"
+      },
+      {
+        "number": 1894,
+        "word": "staggered",
+        "meaning": "adj. 震惊的；交错的，错开的"
+      },
+      {
+        "number": 871,
+        "word": "staggering",
+        "meaning": "adj. 大得惊人的，令人难以相信的"
+      },
+      {
+        "number": 2513,
+        "word": "stagnant",
+        "meaning": "adj. (水或空气) 不流动的；停滞的"
+      },
+      {
+        "number": 198,
+        "word": "stain",
+        "meaning": "vt. vi. 弄脏；vt. 给…染色；玷污，败坏 (名声)；n. 污点，污渍；染色剂，着色剂"
+      },
+      {
+        "number": 262,
+        "word": "stake",
+        "meaning": "n. 股份；重大利益；赌注；桩；vt. 以…打赌，拿…冒险"
+      },
+      {
+        "number": 3002,
+        "word": "stalk",
+        "meaning": "n. 茎，秆，梗；柄状物；vt. vi. 跟踪；出没，作祟；vi. 高视阔步，怒气冲冲地走"
+      },
+      {
+        "number": 669,
+        "word": "stampede",
+        "meaning": "n. 蜂拥，狂奔；热潮，风尚；vi. vt. (使) 狂奔，涌向；vt. 使仓促行事"
+      },
+      {
+        "number": 3554,
+        "word": "standard",
+        "meaning": "n. 标准，水平；道德水准；军旗；adj. 通常的，标准的；规范的"
+      },
+      {
+        "number": 886,
+        "word": "stanza",
+        "meaning": "n. (诗的) 节，段"
+      },
+      {
+        "number": 968,
+        "word": "staple",
+        "meaning": "adj. 主要的，基本的，重要的；n. 订书钉；基本食物；支柱产品；vt. 用订书钉装订"
+      },
+      {
+        "number": 251,
+        "word": "starch",
+        "meaning": "n. 淀粉，含淀粉的食物；淀粉浆；vt. 给(衣服、床单等)上浆"
+      },
+      {
+        "number": 1561,
+        "word": "stardom",
+        "meaning": "n. 明星身份"
+      },
+      {
+        "number": 1712,
+        "word": "stark",
+        "meaning": "adj. 荒凉的；严酷的；明显的；adv. 一丝不挂，赤裸"
+      },
+      {
+        "number": 2562,
+        "word": "startling",
+        "meaning": "adj. 惊人的，让人震惊的"
+      },
+      {
+        "number": 1847,
+        "word": "stash",
+        "meaning": "vt. 存放，藏匿 (贵重物品)；n. 一批 (贮藏物)；藏匿处"
+      },
+      {
+        "number": 2481,
+        "word": "state",
+        "meaning": "n. 状况；国家；州；政府；vt. 陈述，说明；规定；adj. 国家的；国事的；州的"
+      },
+      {
+        "number": 1251,
+        "word": "statesman",
+        "meaning": "n. 政治家"
+      },
+      {
+        "number": 1636,
+        "word": "static",
+        "meaning": "adj. 静止的，停滞的；静电的；n. 静电干扰；静电；指责，抱怨"
+      },
+      {
+        "number": 2638,
+        "word": "station",
+        "meaning": "n. 车站；站，所，局；电视台；vt. 派驻，使驻扎；置身于"
+      },
+      {
+        "number": 2731,
+        "word": "stationary",
+        "meaning": "adj. 静止的；不变的，稳定的"
+      },
+      {
+        "number": 1416,
+        "word": "statue",
+        "meaning": "n. 雕像，雕塑"
+      },
+      {
+        "number": 1831,
+        "word": "stature",
+        "meaning": "n. 声望，名望；身高"
+      },
+      {
+        "number": 625,
+        "word": "status",
+        "meaning": "n. 地位，身份；状况，状态"
+      },
+      {
+        "number": 3085,
+        "word": "staunch",
+        "meaning": "adj. 忠实的，坚定的；vt. 止住 (血等的) 流出"
+      },
+      {
+        "number": 545,
+        "word": "steady",
+        "meaning": "adj. 稳步的；稳定的；(人) 可靠的；vt. vi. 稳住；恢复平稳；使平静；adv. 稳定地，持续地"
+      },
+      {
+        "number": 3865,
+        "word": "steep",
+        "meaning": "adj. 陡的；急剧的；(价格等) 过高的；vt. 浸泡 (食物)"
+      },
+      {
+        "number": 2668,
+        "word": "steer",
+        "meaning": "vt. vi. 驾驶 (船、汽车等)；(船等) 行驶；vt. 操纵，控制，引导；带领；n. 阉公牛，肉用公牛"
+      },
+      {
+        "number": 2649,
+        "word": "stellar",
+        "meaning": "adj. 星的，恒星的；杰出的，优秀的"
+      },
+      {
+        "number": 2816,
+        "word": "stem",
+        "meaning": "n. (植物的) 秆，茎；(烟斗) 柄；vt. 阻止，遏制，制止；vi. 源于，由…造成"
+      },
+      {
+        "number": 3725,
+        "word": "stereo",
+        "meaning": "n. 立体声音响；立体声；adj. 立体声的"
+      },
+      {
+        "number": 3573,
+        "word": "stereotype",
+        "meaning": "n. 成见，刻板印象；vt. 对…有成见"
+      },
+      {
+        "number": 1282,
+        "word": "sterile",
+        "meaning": "adj. 不育的；无菌的；缺乏新意的；adj. (讨论) 无结果的；(土地) 贫瘠的"
+      },
+      {
+        "number": 3335,
+        "word": "stew",
+        "meaning": "n. 炖菜；vt. vi. 炖，煨；vi. 思考，担忧"
+      },
+      {
+        "number": 1881,
+        "word": "stick",
+        "meaning": "vt. vi. 刺入，插入；粘住；vt. 随手放置；vi. 卡住；被接受；n. 枝条；条状物；棍"
+      },
+      {
+        "number": 456,
+        "word": "sticky",
+        "meaning": "adj. 黏的；闷热的；棘手的"
+      },
+      {
+        "number": 877,
+        "word": "stiff",
+        "meaning": "adj. 硬的；僵硬的；稠的；激烈的；adv. 非常，极其；n. 死尸；vt. 不付钱给，不给…小费"
+      },
+      {
+        "number": 1165,
+        "word": "stiffen",
+        "meaning": "vi. vt. (身体) 僵住；(使态度等) 变强硬"
+      },
+      {
+        "number": 2772,
+        "word": "stigma",
+        "meaning": "n. 耻辱，羞辱"
+      },
+      {
+        "number": 4044,
+        "word": "stimulate",
+        "meaning": "vt. 刺激；激发，激励；使活跃"
+      },
+      {
+        "number": 971,
+        "word": "stimulus",
+        "meaning": "n. 刺激物，促进因素；(生物) 刺激"
+      },
+      {
+        "number": 267,
+        "word": "sting",
+        "meaning": "vt. vi. 蜇，叮；(使) 感觉刺痛；vt. 激怒，使不安；敲诈，欺诈；n. 螫针，刺；刺伤，蜇伤；痛苦"
+      },
+      {
+        "number": 574,
+        "word": "stingy",
+        "meaning": "adj. 小气的，吝啬的"
+      },
+      {
+        "number": 1101,
+        "word": "stipulate",
+        "meaning": "vt. 规定，约定，明确要求"
+      },
+      {
+        "number": 977,
+        "word": "stir",
+        "meaning": "vt. vi. 搅动，搅拌；(使) 微动；vt. 引起，造成，激起；vi. (情绪等) 开始出现；n. 激动，愤怒；搅动，搅拌"
+      },
+      {
+        "number": 4217,
+        "word": "stock",
+        "meaning": "n. 库存；储备物；股票；家畜；vt. (商店) 存货；贮存，贮备；adj. 老一套的；(商店) 库存的，常备的"
+      },
+      {
+        "number": 369,
+        "word": "storage",
+        "meaning": "n. 储藏，贮存；(计算机) 存储"
+      },
+      {
+        "number": 277,
+        "word": "stout",
+        "meaning": "adj. (人) 肥壮的；结实的；坚决的；n. (烈性) 黑啤酒"
+      },
+      {
+        "number": 34,
+        "word": "strain",
+        "meaning": "n. 压力；劳损，拉伤；品种；vt. 拉伤，扭伤，劳损；过度使用；vt. vi. 尽力，使劲；vi. 用力推 (或拉)，拉紧"
+      },
+      {
+        "number": 4236,
+        "word": "strand",
+        "meaning": "n. 股，缕；部分；海滨，海岸；vt. 使滞留，使无法脱身；使搁浅"
+      },
+      {
+        "number": 2408,
+        "word": "strap",
+        "meaning": "n. 带子；vt. 用带子系 (或绑)；用绷带包扎"
+      },
+      {
+        "number": 1878,
+        "word": "strategic",
+        "meaning": "adj. 战略性的"
+      },
+      {
+        "number": 3153,
+        "word": "strategy",
+        "meaning": "n. 战略，策略；战略学"
+      },
+      {
+        "number": 594,
+        "word": "stratigraphy",
+        "meaning": "n. 地层学"
+      },
+      {
+        "number": 2097,
+        "word": "stratum",
+        "meaning": "n. 岩层，地层；阶层"
+      },
+      {
+        "number": 323,
+        "word": "stream",
+        "meaning": "n. 小溪；水流，气流；一连串；vi. vt. (水、气等) 流动；vi. (人或物) 涌向；飘扬，漂流；vt. 流媒体播放"
+      },
+      {
+        "number": 470,
+        "word": "strenuous",
+        "meaning": "adj. 费力的，繁重的；竭尽全力的"
+      },
+      {
+        "number": 2142,
+        "word": "stress",
+        "meaning": "n. 压力；重音；强调；vt. 强调；重读；vi. vt. (使) 焦虑不安"
+      },
+      {
+        "number": 335,
+        "word": "stretch",
+        "meaning": "vt. vi. 拉长，撑大；伸展；伸出；vi. (织物) 有弹性；绵延；延续；vt. 拉紧；消耗；使竭尽所能；滥用；n. 一段；一段时间；伸展；弹性"
+      },
+      {
+        "number": 502,
+        "word": "stride",
+        "meaning": "vi. 大步走，阔步行走；n. 大步；进展，进步；步伐"
+      },
+      {
+        "number": 2015,
+        "word": "strike",
+        "meaning": "vt. 打，击；撞；突然想到；给…印象；vi. 罢工；行进；vi. vt. 袭击；侵袭；划 (火柴)；敲，鸣；n. 罢工；袭击；击，打；全中"
+      },
+      {
+        "number": 2069,
+        "word": "string",
+        "meaning": "n. 细绳，线；一串；一系列；弦；vt. 悬挂，系；把…连在一起；adj. 弦乐器的；线织的"
+      },
+      {
+        "number": 2725,
+        "word": "strip",
+        "meaning": "n. (纸、布料等的) 条；狭长地带；vt. 除去；全部拿走；拆卸；剥夺；vi. vt. 脱光衣服，扒光…的衣服"
+      },
+      {
+        "number": 2074,
+        "word": "stripe",
+        "meaning": "n. 条纹，线条；军阶条；种类"
+      },
+      {
+        "number": 2349,
+        "word": "strive",
+        "meaning": "vi. 努力，奋斗，力争"
+      },
+      {
+        "number": 203,
+        "word": "stubborn",
+        "meaning": "adj. 固执的，顽固的；难以对付的"
+      },
+      {
+        "number": 2422,
+        "word": "studio",
+        "meaning": "n. 演播室；电影公司；工作室；n. 电影摄影棚；练舞房；单间公寓"
+      },
+      {
+        "number": 3882,
+        "word": "stuff",
+        "meaning": "n. 东西，物品；特质，原料；vt. 填满；把…塞进；制作动物标本"
+      },
+      {
+        "number": 21,
+        "word": "stumble",
+        "meaning": "vi. 绊脚；踉跄；结巴；出现问题；n. 绊倒；差错"
+      },
+      {
+        "number": 3650,
+        "word": "stun",
+        "meaning": "vt. 使震惊；使昏迷；使印象深刻"
+      },
+      {
+        "number": 1439,
+        "word": "stunt",
+        "meaning": "n. 特技表演；噱头；危险举动；vt. 阻碍生长，妨碍发展"
+      },
+      {
+        "number": 3466,
+        "word": "sturdy",
+        "meaning": "adj. 牢固的，强壮的；坚定的"
+      },
+      {
+        "number": 1717,
+        "word": "stylish",
+        "meaning": "adj. 有格调的，时尚的"
+      },
+      {
+        "number": 2109,
+        "word": "stylistic",
+        "meaning": "adj. 风格上的，文体上的"
+      },
+      {
+        "number": 50,
+        "word": "stylized",
+        "meaning": "adj. (绘画、写作等) 非写实的"
+      }
+    ]
+  }
+}

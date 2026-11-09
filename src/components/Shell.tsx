@@ -1,4 +1,4 @@
-import { BookOpen, ChartColumn, House, Settings } from "lucide-react"
+import { BookOpen, ChartColumn, House, Settings, WholeWord } from "lucide-react"
 import { NavLink, Outlet } from "react-router-dom"
 
 function Mark() {
@@ -31,6 +31,10 @@ export function Shell() {
             <NavLink to="/vocab">
               <BookOpen size={16} strokeWidth={1.7} aria-hidden />
               <span>练习</span>
+            </NavLink>
+            <NavLink to="/prefix" aria-label="词缀 Prefix">
+              <WholeWord size={16} strokeWidth={1.7} aria-hidden />
+              <span>词缀<span className="nav-en">Prefix</span></span>
             </NavLink>
             <NavLink to="/stats">
               <ChartColumn size={16} strokeWidth={1.7} aria-hidden />
