@@ -3212,6 +3212,158 @@
         "word": "convince",
         "meaning": "vt. 使确信,使信服;说服,劝服"
       }
+    ],
+    "sub": [
+      {
+        "number": 4148,
+        "word": "subconscious",
+        "meaning": "adj. 潜意识的；n. 潜意识"
+      },
+      {
+        "number": 31,
+        "word": "subculture",
+        "meaning": "n. 亚文化群，亚文化"
+      },
+      {
+        "number": 2596,
+        "word": "subdivide",
+        "meaning": "vt. vi. (被) 再分割，再分"
+      },
+      {
+        "number": 2556,
+        "word": "subdue",
+        "meaning": "vt. 制伏，控制；克制 (感情)"
+      },
+      {
+        "number": 483,
+        "word": "subject",
+        "meaning": "n. 主题；学科；对象；主语；臣民；adj. 易遭…的；取决于…的；受…支配；vt. 使臣服，使顺从；使遭受"
+      },
+      {
+        "number": 3115,
+        "word": "subjective",
+        "meaning": "adj. 主观的；主语的"
+      },
+      {
+        "number": 756,
+        "word": "subjugate",
+        "meaning": "vt. 征服，制服，使屈服"
+      },
+      {
+        "number": 3173,
+        "word": "subliminal",
+        "meaning": "adj. 下意识的，潜意识的"
+      },
+      {
+        "number": 4021,
+        "word": "submarine",
+        "meaning": "n. 潜艇；adj. 海底的"
+      },
+      {
+        "number": 989,
+        "word": "submerge",
+        "meaning": "vt. vi. (使) 浸没，淹没，没入水中；vt. 掩盖，遮掩 (想法、感情等)"
+      },
+      {
+        "number": 3327,
+        "word": "submission",
+        "meaning": "n. 屈服，投降；提交 (的文件或建议)"
+      },
+      {
+        "number": 1988,
+        "word": "submit",
+        "meaning": "vt. 提交，递呈；主张；vi. vt. 顺从，屈服，被迫接受"
+      },
+      {
+        "number": 1972,
+        "word": "subordinate",
+        "meaning": "adj. 下级的，从属的；次要的；n. 下级，下属；vt. 把…置于次要地位"
+      },
+      {
+        "number": 3995,
+        "word": "suborn",
+        "meaning": "vt. 教唆…作伪证，唆使"
+      },
+      {
+        "number": 3669,
+        "word": "subscribe",
+        "meaning": "vi. 订阅，订购；定期赞助；同意；vi. 申请，报名；vi. vt. 签署"
+      },
+      {
+        "number": 3031,
+        "word": "subsequent",
+        "meaning": "adj. 随后的，后来的"
+      },
+      {
+        "number": 2499,
+        "word": "subsidiary",
+        "meaning": "adj. 辅助的，次要的；(公司) 附属的；n. 子公司，附属公司"
+      },
+      {
+        "number": 2973,
+        "word": "subsidy",
+        "meaning": "n. 补贴，津贴"
+      },
+      {
+        "number": 797,
+        "word": "subsist",
+        "meaning": "vi. 维持生活，度日；存在，有效"
+      },
+      {
+        "number": 1148,
+        "word": "subsistence",
+        "meaning": "n. 勉强生存，维持生计"
+      },
+      {
+        "number": 2106,
+        "word": "subspecies",
+        "meaning": "n. (动植物的) 亚种"
+      },
+      {
+        "number": 1081,
+        "word": "substance",
+        "meaning": "n. 物质；根据；主旨；重要性"
+      },
+      {
+        "number": 2833,
+        "word": "substantial",
+        "meaning": "adj. 大量的，重大的，实质性的；adj. 大而坚固的"
+      },
+      {
+        "number": 2664,
+        "word": "substantiate",
+        "meaning": "vt. 证实，证明"
+      },
+      {
+        "number": 5,
+        "word": "substitute",
+        "meaning": "n. 代替者，代替物；替补运动员；vi. vt. 替换，取代"
+      },
+      {
+        "number": 517,
+        "word": "subtle",
+        "meaning": "adj. 细微的，微妙的；含蓄的；巧妙的"
+      },
+      {
+        "number": 775,
+        "word": "subtract",
+        "meaning": "vt. vi. 减，减去"
+      },
+      {
+        "number": 3688,
+        "word": "suburb",
+        "meaning": "n. 城郊，郊区"
+      },
+      {
+        "number": 4210,
+        "word": "subversive",
+        "meaning": "adj. 颠覆性的，暗中起破坏作用的；n. 颠覆分子，破坏分子"
+      },
+      {
+        "number": 521,
+        "word": "subway",
+        "meaning": "n. 地铁；地下通道"
+      }
     ]
   }
 }
