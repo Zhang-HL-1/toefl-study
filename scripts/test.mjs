@@ -5,11 +5,11 @@ const server = await createServer({ server: { middlewareMode: true } })
 try {
   const { WORDS, SOURCE_BOOKS, wordsInRoom } = await server.ssrLoadModule("/src/domain/words.ts")
   const { PREFIXES, PREFIX_VOCAB } = await server.ssrLoadModule("/src/domain/prefixVocab.ts")
-  assert.deepEqual([...PREFIXES], ["trans", "pro", "pre", "in", "re", "st", "con"])
-  assert.equal(PREFIX_VOCAB.length, 639)
+  assert.deepEqual([...PREFIXES], ["trans", "pro", "pre", "in", "re", "st", "con", "sub"])
+  assert.equal(PREFIX_VOCAB.length, 669)
   assert.deepEqual(
     Object.fromEntries(PREFIXES.map((prefix) => [prefix, PREFIX_VOCAB.filter((entry) => entry.prefix === prefix).length])),
-    { trans: 17, pro: 52, pre: 42, in: 156, re: 173, st: 82, con: 117 },
+    { trans: 17, pro: 52, pre: 42, in: 156, re: 173, st: 82, con: 117, sub: 30 },
   )
   assert.equal(new Set(PREFIX_VOCAB.map((entry) => entry.id)).size, PREFIX_VOCAB.length)
   for (const entry of PREFIX_VOCAB) {
@@ -25,6 +25,9 @@ try {
   assert.equal(PREFIX_VOCAB.find((entry) => entry.word === "consumption").meaning, "n. 消耗 (量);食用 (量);消费")
   assert.equal(PREFIX_VOCAB.find((entry) => entry.word === "statistic").meaning, "n. 统计数字 (或资料);统计学")
   assert.equal(PREFIX_VOCAB.find((entry) => entry.word === "stray").meaning, "vi. 走失;离题,走神;有外遇 adj. 走失的,离群的;零星的 n. 走失的宠物;离群的人或物")
+  assert.equal(PREFIX_VOCAB.find((entry) => entry.word === "subconscious").meaning, "adj. 潜意识的；n. 潜意识")
+  assert.equal(PREFIX_VOCAB.find((entry) => entry.word === "subject").meaning, "n. 主题；学科；对象；主语；臣民；adj. 易遭…的；取决于…的；受…支配；vt. 使臣服，使顺从；使遭受")
+  assert.equal(PREFIX_VOCAB.find((entry) => entry.word === "subway").meaning, "n. 地铁；地下通道")
   const { randomCandidate } = await server.ssrLoadModule("/src/domain/schedule.ts")
   const { mergeStores, parseStoreJson, serializeStore, selfCheckMerge } = await server.ssrLoadModule("/src/domain/mergeProgress.ts")
   const { totalsFor } = await server.ssrLoadModule("/src/domain/progressCounts.ts")
