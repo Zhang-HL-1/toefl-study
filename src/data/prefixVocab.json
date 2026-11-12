@@ -3364,6 +3364,53 @@
         "word": "subway",
         "meaning": "n. 地铁；地下通道"
       }
+    ],
+    "under": [
+      {
+        "number": 1825,
+        "word": "undergo",
+        "meaning": "vt. 经历，经受，遭受"
+      },
+      {
+        "number": 2146,
+        "word": "undergraduate",
+        "meaning": "n. 在校本科生，大学生"
+      },
+      {
+        "number": 2819,
+        "word": "underground",
+        "meaning": "adv. 在地面下；秘密地，隐蔽地；adj. 地面下的；秘密的，地下的；n. 地铁；反政府地下组织"
+      },
+      {
+        "number": 1784,
+        "word": "underlying",
+        "meaning": "adj. 深层的，潜在的；表面以下的"
+      },
+      {
+        "number": 789,
+        "word": "underneath",
+        "meaning": "prep. adv. 在…下面；在内心深处；n. 底层，底部"
+      },
+      {
+        "number": 8,
+        "word": "underscore",
+        "meaning": "vt. 强调，突出；在…下面划线"
+      },
+      {
+        "number": 1280,
+        "word": "understate",
+        "meaning": "vt. 轻描淡写地叙述，淡化"
+      },
+      {
+        "number": 2549,
+        "word": "undertake",
+        "meaning": "vt. 承担，着手做；承诺，保证"
+      },
+      {
+        "number": 2326,
+        "word": "undertaking",
+        "meaning": "n. 任务，项目，事业；承诺"
+      }
     ]
   }
 }

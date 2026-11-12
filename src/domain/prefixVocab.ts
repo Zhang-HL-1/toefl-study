@@ -1,6 +1,6 @@
 import prefixVocabFile from "../data/prefixVocab.json"
 
-export const PREFIXES = ["trans", "pro", "pre", "in", "re", "st", "con", "sub"] as const
+export const PREFIXES = ["trans", "pro", "pre", "in", "re", "st", "con", "sub", "under"] as const
 
 export type PrefixId = (typeof PREFIXES)[number]
 
