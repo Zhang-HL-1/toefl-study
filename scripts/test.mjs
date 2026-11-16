@@ -5,12 +5,12 @@ const server = await createServer({ server: { middlewareMode: true } })
 try {
   const { WORDS, SOURCE_BOOKS, wordsInRoom } = await server.ssrLoadModule("/src/domain/words.ts")
   const { PREFIXES, PREFIX_VOCAB, matchesPrefixFilter, parsePrefixFilter } = await server.ssrLoadModule("/src/domain/prefixVocab.ts")
-  assert.deepEqual([...PREFIXES], ["trans", "pro", "pre", "in", "re", "st", "con", "sub", "under"])
-  assert.equal(PREFIX_VOCAB.length, 678)
-  assert.equal(new Set(PREFIX_VOCAB.map((entry) => entry.word.toLowerCase())).size, 678)
+  assert.deepEqual([...PREFIXES], ["trans", "pro", "pre", "in", "re", "st", "con", "sub", "under", "fac"])
+  assert.equal(PREFIX_VOCAB.length, 687)
+  assert.equal(new Set(PREFIX_VOCAB.map((entry) => entry.word.toLowerCase())).size, 687)
   assert.deepEqual(
     Object.fromEntries(PREFIXES.map((prefix) => [prefix, PREFIX_VOCAB.filter((entry) => entry.prefix === prefix).length])),
-    { trans: 17, pro: 52, pre: 42, in: 156, re: 173, st: 82, con: 117, sub: 30, under: 9 },
+    { trans: 17, pro: 52, pre: 42, in: 156, re: 173, st: 82, con: 117, sub: 30, under: 9, fac: 9 },
   )
   assert.equal(new Set(PREFIX_VOCAB.map((entry) => entry.id)).size, PREFIX_VOCAB.length)
   for (const entry of PREFIX_VOCAB) {
@@ -32,6 +32,21 @@ try {
   assert.equal(PREFIX_VOCAB.find((entry) => entry.word === "undergo").meaning, "vt. 经历，经受，遭受")
   assert.equal(PREFIX_VOCAB.find((entry) => entry.word === "underneath").meaning, "prep. adv. 在…下面；在内心深处；n. 底层，底部")
   assert.equal(PREFIX_VOCAB.find((entry) => entry.word === "undertaking").meaning, "n. 任务，项目，事业；承诺")
+  const facWords = [
+    ["facade", 2789, "n. 建筑物正面；（虚假的）表象"],
+    ["facet", 1143, "n. 部分，方面；（宝石的）小平面"],
+    ["facial", 3604, "adj. 面部的，脸上的；n. 面部护理"],
+    ["facilitate", 63, "vt. 促进，使便利"],
+    ["facility", 2011, "n. 设备，设施；特色功能；天资"],
+    ["faction", 3897, "n. 派别，派系；派系之争"],
+    ["factor", 2364, "n. 因素，要素；因子，因数；倍数；vt. 把…因素包括进去"],
+    ["factual", 3073, "adj. 与事实有关的，真实的"],
+    ["faculty", 3374, "n. 全体教员；院系；机能；能力"],
+  ]
+  assert.deepEqual(
+    PREFIX_VOCAB.filter((entry) => entry.prefix === "fac").map((entry) => [entry.word, entry.number, entry.meaning]),
+    facWords,
+  )
   const conPlus4Words = [
     ["conform", 9], ["connote", 206], ["console", 212], ["conceit", 280], ["conquer", 381],
     ["concert", 413], ["conceal", 543], ["concave", 578], ["concept", 643], ["condole", 915],
