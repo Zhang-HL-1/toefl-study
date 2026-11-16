@@ -807,6 +807,8 @@ a { color: inherit; }
 
 .prefix-tabs .btn { height: 36px; padding: 0 12px; }
 
+.prefix-tabs .prefix-subset.btn-ghost { border-style: dashed; }
+
 .prefix-count {
   font-size: 12px;
   font-weight: 500;
