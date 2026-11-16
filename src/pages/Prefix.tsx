@@ -1,6 +1,14 @@
 import { useMemo, useState } from "react"
 import { useSearchParams } from "react-router-dom"
-import { isPrefixId, PREFIXES, PREFIX_SOURCE, PREFIX_VOCAB, type PrefixId } from "../domain/prefixVocab"
+import {
+  matchesPrefixFilter,
+  parsePrefixFilter,
+  PREFIXES,
+  PREFIX_SOURCE,
+  PREFIX_SUBSETS,
+  PREFIX_VOCAB,
+  type PrefixFilterId,
+} from "../domain/prefixVocab"
 import { useTitle } from "../hooks/useTitle"
 
 const PAGE_SIZE = 100
@@ -8,25 +16,50 @@ const PAGE_SIZE = 100
 export function Prefix() {
   const [params, setParams] = useSearchParams()
   const requested = params.get("prefix")
-  const prefix: PrefixId | "all" = isPrefixId(requested) ? requested : "all"
+  const prefix: PrefixFilterId | "all" = parsePrefixFilter(requested)
   const [query, setQuery] = useState("")
   const [showGloss, setShowGloss] = useState(true)
   const [openId, setOpenId] = useState<string | null>(null)
   const [page, setPage] = useState(1)
   useTitle("词缀 Prefix · Atrium")
 
+  const chips = useMemo(() => {
+    const next: { id: PrefixFilterId; label: string; hint?: string; count: number; subset: boolean }[] = []
+    for (const id of PREFIXES) {
+      next.push({
+        id,
+        label: `${id}-`,
+        count: PREFIX_VOCAB.filter((entry) => entry.prefix === id).length,
+        subset: false,
+      })
+      for (const subset of PREFIX_SUBSETS) {
+        if (subset.after !== id) continue
+        next.push({
+          id: subset.id,
+          label: subset.label,
+          hint: subset.hint,
+          count: PREFIX_VOCAB.filter((entry) => subset.matches(entry)).length,
+          subset: true,
+        })
+      }
+    }
+    return next
+  }, [])
+
   const filtered = useMemo(() => {
     const needle = query.trim().toLowerCase()
     return PREFIX_VOCAB.filter((entry) => {
-      if (prefix !== "all" && entry.prefix !== prefix) return false
+      if (!matchesPrefixFilter(entry, prefix)) return false
       if (!needle) return true
       return entry.word.toLowerCase().includes(needle) || entry.meaning.toLowerCase().includes(needle)
     })
   }, [prefix, query])
 
   const visible = filtered.slice(0, page * PAGE_SIZE)
+  const activeSubset = PREFIX_SUBSETS.find((subset) => subset.id === prefix)
+  const caption = prefix === "all" ? "全部前缀" : activeSubset ? `${activeSubset.label} · ${activeSubset.hint}` : `${prefix}-`
 
-  function choosePrefix(next: PrefixId | "all") {
+  function choosePrefix(next: PrefixFilterId | "all") {
     setPage(1)
     setOpenId(null)
     if (next === "all") setParams({}, { replace: true })
@@ -40,7 +73,7 @@ export function Prefix() {
         <h1>词缀</h1>
         <p className="lede">
           《{PREFIX_SOURCE.title}》里 {PREFIX_VOCAB.length} 个共享前缀的词，用来对照阅读填空里容易混在一起的 trans-、pro-、pre-、in-、re-、st-、con-、sub-、under-。
-          释义默认展开，也可以先藏起来再回忆。
+          con+4 选出 con 开头且后面正好 4 个字母的词，这些词仍在 con- 里。释义默认展开，也可以先藏起来再回忆。
         </p>
       </header>
 
@@ -53,20 +86,19 @@ export function Prefix() {
         >
           全部 <span className="prefix-count">{PREFIX_VOCAB.length}</span>
         </button>
-        {PREFIXES.map((id) => {
-          const count = PREFIX_VOCAB.filter((entry) => entry.prefix === id).length
-          return (
-            <button
-              key={id}
-              type="button"
-              className={`btn ${prefix === id ? "btn-primary" : "btn-ghost"}`}
-              aria-pressed={prefix === id}
-              onClick={() => choosePrefix(id)}
-            >
-              {id}- <span className="prefix-count">{count}</span>
-            </button>
-          )
-        })}
+        {chips.map((chip) => (
+          <button
+            key={chip.id}
+            type="button"
+            className={`btn ${chip.subset ? "prefix-subset" : ""} ${prefix === chip.id ? "btn-primary" : "btn-ghost"}`}
+            aria-pressed={prefix === chip.id}
+            title={chip.hint}
+            aria-label={chip.hint ? `${chip.label}，${chip.count} 词，${chip.hint}` : undefined}
+            onClick={() => choosePrefix(chip.id)}
+          >
+            {chip.label} <span className="prefix-count">{chip.count}</span>
+          </button>
+        ))}
       </div>
 
       <div className="toolbar">
@@ -98,7 +130,7 @@ export function Prefix() {
       </div>
 
       <p className="prefix-meta">
-        {prefix === "all" ? "全部前缀" : `${prefix}-`} · {filtered.length.toLocaleString()} 词
+        {caption} · {filtered.length.toLocaleString()} 词
         {query.trim() ? " · 搜索结果" : ""}
       </p>
 

@@ -4,9 +4,10 @@ import { createServer } from "vite"
 const server = await createServer({ server: { middlewareMode: true } })
 try {
   const { WORDS, SOURCE_BOOKS, wordsInRoom } = await server.ssrLoadModule("/src/domain/words.ts")
-  const { PREFIXES, PREFIX_VOCAB } = await server.ssrLoadModule("/src/domain/prefixVocab.ts")
+  const { PREFIXES, PREFIX_VOCAB, matchesPrefixFilter, parsePrefixFilter } = await server.ssrLoadModule("/src/domain/prefixVocab.ts")
   assert.deepEqual([...PREFIXES], ["trans", "pro", "pre", "in", "re", "st", "con", "sub", "under"])
   assert.equal(PREFIX_VOCAB.length, 678)
+  assert.equal(new Set(PREFIX_VOCAB.map((entry) => entry.word.toLowerCase())).size, 678)
   assert.deepEqual(
     Object.fromEntries(PREFIXES.map((prefix) => [prefix, PREFIX_VOCAB.filter((entry) => entry.prefix === prefix).length])),
     { trans: 17, pro: 52, pre: 42, in: 156, re: 173, st: 82, con: 117, sub: 30, under: 9 },
@@ -31,6 +32,26 @@ try {
   assert.equal(PREFIX_VOCAB.find((entry) => entry.word === "undergo").meaning, "vt. 经历，经受，遭受")
   assert.equal(PREFIX_VOCAB.find((entry) => entry.word === "underneath").meaning, "prep. adv. 在…下面；在内心深处；n. 底层，底部")
   assert.equal(PREFIX_VOCAB.find((entry) => entry.word === "undertaking").meaning, "n. 任务，项目，事业；承诺")
+  const conPlus4Words = [
+    ["conform", 9], ["connote", 206], ["console", 212], ["conceit", 280], ["conquer", 381],
+    ["concert", 413], ["conceal", 543], ["concave", 578], ["concept", 643], ["condole", 915],
+    ["convict", 1039], ["consume", 1060], ["confirm", 1187], ["contour", 1253], ["consist", 1287],
+    ["concise", 1312], ["contain", 1438], ["conjure", 1452], ["consort", 1685], ["contest", 2005],
+    ["concede", 3067], ["convene", 3110], ["congest", 3128], ["consent", 3135], ["conduct", 3373],
+    ["concern", 3537], ["concord", 3759], ["context", 3831], ["convert", 3877], ["confine", 3896],
+    ["consult", 4004],
+  ]
+  assert.equal(parsePrefixFilter("con+4"), "con+4")
+  assert.equal(parsePrefixFilter("con 4"), "con+4")
+  assert.equal(parsePrefixFilter("con"), "con")
+  const conPlus4 = PREFIX_VOCAB.filter((entry) => matchesPrefixFilter(entry, "con+4"))
+  assert.equal(conPlus4.length, 31)
+  assert.deepEqual(
+    conPlus4.map((entry) => [entry.word, entry.number]).sort((a, b) => a[0].localeCompare(b[0])),
+    conPlus4Words.slice().sort((a, b) => a[0].localeCompare(b[0])),
+  )
+  assert.equal(PREFIX_VOCAB.filter((entry) => entry.prefix === "con" && matchesPrefixFilter(entry, "con+4")).length, 31)
+  assert.equal(PREFIX_VOCAB.filter((entry) => matchesPrefixFilter(entry, "con")).length, 117)
   const { randomCandidate } = await server.ssrLoadModule("/src/domain/schedule.ts")
   const { mergeStores, parseStoreJson, serializeStore, selfCheckMerge } = await server.ssrLoadModule("/src/domain/mergeProgress.ts")
   const { totalsFor } = await server.ssrLoadModule("/src/domain/progressCounts.ts")
