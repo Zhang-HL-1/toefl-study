@@ -3458,6 +3458,60 @@
         "word": "faculty",
         "meaning": "n. 全体教员；院系；机能；能力"
       }
+    ],
+    "ide": [
+      {
+        "number": 58,
+        "word": "idealize",
+        "meaning": "vt. 将…视为理想，将…理想化"
+      },
+      {
+        "number": 85,
+        "word": "identity",
+        "meaning": "n. 身份，本体；特性，个性；相同"
+      },
+      {
+        "number": 359,
+        "word": "ideology",
+        "meaning": "n. 思想体系，意识形态"
+      },
+      {
+        "number": 406,
+        "word": "identify",
+        "meaning": "vt. 认出，确认，识别；发现，查明；显示身份"
+      },
+      {
+        "number": 737,
+        "word": "identification",
+        "meaning": "n. 确认，识别；身份证明；确定"
+      },
+      {
+        "number": 3776,
+        "word": "identical",
+        "meaning": "adj. 完全相同的，同样的"
+      },
+      {
+        "number": 3792,
+        "word": "ideomotor",
+        "meaning": "adj. 观念运动的"
+      }
+    ],
+    "fund": [
+      {
+        "number": 1852,
+        "word": "fund",
+        "meaning": "n. 基金，专款；资金；大量；vt. 资助，为…提供资金"
+      },
+      {
+        "number": 2039,
+        "word": "funding",
+        "meaning": "n. 资金，拨款"
+      },
+      {
+        "number": 2785,
+        "word": "fundamental",
+        "meaning": "adj. 根本的，最重要的；基础的；n. 根本，基础"
+      }
     ]
   }
 }

@@ -5,12 +5,12 @@ const server = await createServer({ server: { middlewareMode: true } })
 try {
   const { WORDS, SOURCE_BOOKS, wordsInRoom } = await server.ssrLoadModule("/src/domain/words.ts")
   const { PREFIXES, PREFIX_VOCAB, matchesPrefixFilter, parsePrefixFilter } = await server.ssrLoadModule("/src/domain/prefixVocab.ts")
-  assert.deepEqual([...PREFIXES], ["trans", "pro", "pre", "in", "re", "st", "con", "sub", "under", "fac"])
-  assert.equal(PREFIX_VOCAB.length, 687)
-  assert.equal(new Set(PREFIX_VOCAB.map((entry) => entry.word.toLowerCase())).size, 687)
+  assert.deepEqual([...PREFIXES], ["trans", "pro", "pre", "in", "re", "st", "con", "sub", "under", "fac", "ide", "fund"])
+  assert.equal(PREFIX_VOCAB.length, 697)
+  assert.equal(new Set(PREFIX_VOCAB.map((entry) => entry.word.toLowerCase())).size, 697)
   assert.deepEqual(
     Object.fromEntries(PREFIXES.map((prefix) => [prefix, PREFIX_VOCAB.filter((entry) => entry.prefix === prefix).length])),
-    { trans: 17, pro: 52, pre: 42, in: 156, re: 173, st: 82, con: 117, sub: 30, under: 9, fac: 9 },
+    { trans: 17, pro: 52, pre: 42, in: 156, re: 173, st: 82, con: 117, sub: 30, under: 9, fac: 9, ide: 7, fund: 3 },
   )
   assert.equal(new Set(PREFIX_VOCAB.map((entry) => entry.id)).size, PREFIX_VOCAB.length)
   for (const entry of PREFIX_VOCAB) {
@@ -46,6 +46,30 @@ try {
   assert.deepEqual(
     PREFIX_VOCAB.filter((entry) => entry.prefix === "fac").map((entry) => [entry.word, entry.number, entry.meaning]),
     facWords,
+  )
+  const ideWords = [
+    ["idealize", 58, "vt. 将…视为理想，将…理想化"],
+    ["identity", 85, "n. 身份，本体；特性，个性；相同"],
+    ["ideology", 359, "n. 思想体系，意识形态"],
+    ["identify", 406, "vt. 认出，确认，识别；发现，查明；显示身份"],
+    ["identification", 737, "n. 确认，识别；身份证明；确定"],
+    ["identical", 3776, "adj. 完全相同的，同样的"],
+    ["ideomotor", 3792, "adj. 观念运动的"],
+  ]
+  const fundWords = [
+    ["fund", 1852, "n. 基金，专款；资金；大量；vt. 资助，为…提供资金"],
+    ["funding", 2039, "n. 资金，拨款"],
+    ["fundamental", 2785, "adj. 根本的，最重要的；基础的；n. 根本，基础"],
+  ]
+  assert.equal(parsePrefixFilter("ide"), "ide")
+  assert.equal(parsePrefixFilter("fund"), "fund")
+  assert.deepEqual(
+    PREFIX_VOCAB.filter((entry) => matchesPrefixFilter(entry, "ide")).map((entry) => [entry.word, entry.number, entry.meaning]),
+    ideWords,
+  )
+  assert.deepEqual(
+    PREFIX_VOCAB.filter((entry) => matchesPrefixFilter(entry, "fund")).map((entry) => [entry.word, entry.number, entry.meaning]),
+    fundWords,
   )
   const conPlus4Words = [
     ["conform", 9], ["connote", 206], ["console", 212], ["conceit", 280], ["conquer", 381],

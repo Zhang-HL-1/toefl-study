@@ -72,7 +72,7 @@ export function Prefix() {
         <p className="eyebrow">Prefix vocabulary</p>
         <h1>词缀</h1>
         <p className="lede">
-          《{PREFIX_SOURCE.title}》里 {PREFIX_VOCAB.length} 个共享前缀的词，用来对照阅读填空里容易混在一起的 trans-、pro-、pre-、in-、re-、st-、con-、sub-、under-、fac-。
+          《{PREFIX_SOURCE.title}》里 {PREFIX_VOCAB.length} 个共享前缀的词，用来对照阅读填空里容易混在一起的 trans-、pro-、pre-、in-、re-、st-、con-、sub-、under-、fac-、ide-、fund-。
           con+4 选出 con 开头且后面正好 4 个字母的词，这些词仍在 con- 里。释义默认展开，也可以先藏起来再回忆。
         </p>
       </header>
