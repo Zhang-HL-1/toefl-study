@@ -72,8 +72,8 @@ export function Prefix() {
         <p className="eyebrow">Prefix vocabulary</p>
         <h1>词缀</h1>
         <p className="lede">
-          《{PREFIX_SOURCE.title}》里 {PREFIX_VOCAB.length} 个共享前缀的词，用来对照阅读填空里容易混在一起的 trans-、pro-、pre-、in-、re-、st-、con-、sub-、under-、fac-、ide-、fund-。
-          con+4 选出 con 开头且后面正好 4 个字母的词，这些词仍在 con- 里。释义默认展开，也可以先藏起来再回忆。
+          {PREFIX_VOCAB.length} 个共享前缀的词，用来对照阅读填空里容易混在一起的 trans-、pro-、pre-、in-、re-、st-、con-、sub-、under-、fac-、ide-、fund-、soc-。
+          有《{PREFIX_SOURCE.title}》词头的条目标出书号。con+4 选出 con 开头且后面正好 4 个字母的词，这些词仍在 con- 里。释义默认展开，也可以先藏起来再回忆。
         </p>
       </header>
 
@@ -149,7 +149,9 @@ export function Prefix() {
                 >
                   <span className="word-line">
                     <span className="word-lemma">{entry.word}</span>
-                    <span className="word-pos">{entry.prefix}- · #{entry.number}</span>
+                    <span className="word-pos">
+                      {entry.number != null ? `${entry.prefix}- · #${entry.number}` : `${entry.prefix}-`}
+                    </span>
                   </span>
                   {open ? (
                     <span className="word-detail">

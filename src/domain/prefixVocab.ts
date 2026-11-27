@@ -1,13 +1,14 @@
 import prefixVocabFile from "../data/prefixVocab.json"
 
-export const PREFIXES = ["trans", "pro", "pre", "in", "re", "st", "con", "sub", "under", "fac", "ide", "fund"] as const
+export const PREFIXES = ["trans", "pro", "pre", "in", "re", "st", "con", "sub", "under", "fac", "ide", "fund", "soc"] as const
 
 export type PrefixId = (typeof PREFIXES)[number]
 
 export interface PrefixEntry {
   id: string
   prefix: PrefixId
-  number: number
+  /** 《托福词汇》 entry number. Omitted when the word is not a book headword. */
+  number?: number
   word: string
   meaning: string
 }
@@ -40,9 +41,19 @@ export type PrefixSubsetId = PrefixSubset["id"]
 
 export type PrefixFilterId = PrefixId | PrefixSubsetId
 
+interface PrefixFileEntry {
+  number?: number
+  word: string
+  meaning: string
+}
+
 interface PrefixFile {
   source: { bookId: string; title: string }
-  prefixes: Record<string, { number: number; word: string; meaning: string }[]>
+  prefixes: Record<string, PrefixFileEntry[]>
+}
+
+function entryId(prefix: PrefixId, entry: PrefixFileEntry): string {
+  return typeof entry.number === "number" ? `${prefix}-${entry.number}` : `${prefix}-${entry.word.toLowerCase()}`
 }
 
 const file = prefixVocabFile as PrefixFile
@@ -56,9 +67,9 @@ export const PREFIX_SOURCE = file.source
 
 export const PREFIX_VOCAB: readonly PrefixEntry[] = PREFIXES.flatMap((prefix) =>
   file.prefixes[prefix].map((entry) => ({
-    id: `${prefix}-${entry.number}`,
+    id: entryId(prefix, entry),
     prefix,
-    number: entry.number,
+    ...(typeof entry.number === "number" ? { number: entry.number } : {}),
     word: entry.word,
     meaning: entry.meaning,
   })),

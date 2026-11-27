@@ -20,9 +20,9 @@ All **11,767 numbered entries** from five user-provided PDFs are imported as **8
 
 ## Prefix lists
 
-`/#/prefix` (nav: 词缀 Prefix) browses 697 words from 《托福词汇》 that share the prefixes trans-, pro-, pre-, in-, re-, st-, con-, sub-, under-, fac-, ide-, and fund-. Filter by prefix, or by con+4 (the 31 con- words with exactly four letters after con; they stay in the con- list and are not extra headwords), or search by the English word or the Chinese meaning. Meanings can be hidden and revealed one word at a time. The list is a study reference only: it does not change practice progress or the Gist sync.
+`/#/prefix` (nav: 词缀 Prefix) browses 706 words that share the prefixes trans-, pro-, pre-, in-, re-, st-, con-, sub-, under-, fac-, ide-, fund-, and soc-. Filter by prefix, or by con+4 (the 31 con- words with exactly four letters after con; they stay in the con- list and are not extra headwords), or search by the English word or the Chinese meaning. Meanings can be hidden and revealed one word at a time. The list is a study reference only: it does not change practice progress or the Gist sync.
 
-`src/data/prefixVocab.json` stores each word with its source entry number and meaning. PDF radical glyphs in those meanings are stored as ordinary characters; no words were added beyond that list.
+`src/data/prefixVocab.json` stores each word with its meaning and, when the word is a 《托福词汇》 headword, its source entry number. sociology (#590) and sociable (#1686) are book headwords; the other seven soc- words are a curated 社会 family and omit the number. PDF radical glyphs in book meanings are stored as ordinary characters.
 
 To reproduce the import with the same source PDFs and PyMuPDF installed:
 

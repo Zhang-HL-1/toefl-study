@@ -5,16 +5,17 @@ const server = await createServer({ server: { middlewareMode: true } })
 try {
   const { WORDS, SOURCE_BOOKS, wordsInRoom } = await server.ssrLoadModule("/src/domain/words.ts")
   const { PREFIXES, PREFIX_VOCAB, matchesPrefixFilter, parsePrefixFilter } = await server.ssrLoadModule("/src/domain/prefixVocab.ts")
-  assert.deepEqual([...PREFIXES], ["trans", "pro", "pre", "in", "re", "st", "con", "sub", "under", "fac", "ide", "fund"])
-  assert.equal(PREFIX_VOCAB.length, 697)
-  assert.equal(new Set(PREFIX_VOCAB.map((entry) => entry.word.toLowerCase())).size, 697)
+  assert.deepEqual([...PREFIXES], ["trans", "pro", "pre", "in", "re", "st", "con", "sub", "under", "fac", "ide", "fund", "soc"])
+  assert.equal(PREFIX_VOCAB.length, 706)
+  assert.equal(new Set(PREFIX_VOCAB.map((entry) => entry.word.toLowerCase())).size, 706)
   assert.deepEqual(
     Object.fromEntries(PREFIXES.map((prefix) => [prefix, PREFIX_VOCAB.filter((entry) => entry.prefix === prefix).length])),
-    { trans: 17, pro: 52, pre: 42, in: 156, re: 173, st: 82, con: 117, sub: 30, under: 9, fac: 9, ide: 7, fund: 3 },
+    { trans: 17, pro: 52, pre: 42, in: 156, re: 173, st: 82, con: 117, sub: 30, under: 9, fac: 9, ide: 7, fund: 3, soc: 9 },
   )
   assert.equal(new Set(PREFIX_VOCAB.map((entry) => entry.id)).size, PREFIX_VOCAB.length)
   for (const entry of PREFIX_VOCAB) {
-    assert.equal(entry.id, `${entry.prefix}-${entry.number}`)
+    if (entry.number == null) assert.equal(entry.id, `${entry.prefix}-${entry.word.toLowerCase()}`)
+    else assert.equal(entry.id, `${entry.prefix}-${entry.number}`)
     assert(entry.word.toLowerCase().startsWith(entry.prefix), entry.word)
     assert(entry.meaning.length > 0)
     assert(!/[\u2E80-\u2FDF]/.test(entry.meaning), entry.meaning)
@@ -61,8 +62,31 @@ try {
     ["funding", 2039, "n. 资金，拨款"],
     ["fundamental", 2785, "adj. 根本的，最重要的；基础的；n. 根本，基础"],
   ]
+  const socWords = [
+    ["society", undefined, "n. 社会；社团"],
+    ["social", undefined, "adj. 社会的；社交的"],
+    ["societal", undefined, "adj. 社会层面的（书面、作文好用）"],
+    ["socialize", undefined, "v. 社交；交往"],
+    ["sociable", 1686, "adj. 善于交际的"],
+    ["sociology", 590, "n. 社会学"],
+    ["sociologist", undefined, "n. 社会学家"],
+    ["socialism", undefined, "n. 社会主义"],
+    ["socialist", undefined, "n./adj. 社会主义者；社会主义的"],
+  ]
+  assert.equal(parsePrefixFilter("soc"), "soc")
   assert.equal(parsePrefixFilter("ide"), "ide")
   assert.equal(parsePrefixFilter("fund"), "fund")
+  assert.deepEqual(
+    PREFIX_VOCAB.filter((entry) => matchesPrefixFilter(entry, "soc")).map((entry) => [entry.word, entry.number, entry.meaning]),
+    socWords,
+  )
+  assert.deepEqual(
+    PREFIX_VOCAB.filter((entry) => entry.number == null).map((entry) => entry.word),
+    ["society", "social", "societal", "socialize", "sociologist", "socialism", "socialist"],
+  )
+  for (const word of ["socioeconomic", "sociocultural", "sociopolitical", "sociolinguistic", "sociolinguistics", "socialization", "socialisation", "sociobiology"]) {
+    assert.equal(PREFIX_VOCAB.some((entry) => entry.word.toLowerCase() === word), false, word)
+  }
   assert.deepEqual(
     PREFIX_VOCAB.filter((entry) => matchesPrefixFilter(entry, "ide")).map((entry) => [entry.word, entry.number, entry.meaning]),
     ideWords,
